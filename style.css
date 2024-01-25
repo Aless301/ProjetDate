@@ -1,0 +1,138 @@
+/*Menu Principale*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avatgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+nav ul{
+    list-style: none;
+}
+nav li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #800909;
+    position: sticky;
+    top: 0px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #9966cc;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a:hover{
+    color: #a7fff3;
+    border-bottom: 2px solid #800909;
+}
+
+/*Début de CSS Classique*/
+
+html {
+    background-color: #6a040f;
+  }
+  
+  body {
+    background-color: #f76868;
+    font-family: Arial;
+    text-align: justify;
+    color: #03071e;
+  }
+  
+  
+  /* Section */
+  footer {
+    border-top: 3px unset #aa1010;
+    font-size: small;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  @media screen and (max-width: 1300px) {
+    footer {
+      font-size: xx-small;
+    }
+  }
+  
+  /* Titres */
+  h1 {
+    color: #03071e;
+    text-decoration: none;
+    text-align: center;
+    clear: right;
+    border-radius: 50px;
+    margin: 5px;
+    text-shadow: #6a040f 2px 2px 0px;
+    padding: 5px;
+  }
+
+  /* Textes */
+  p {
+    margin: 10px;
+    font-size: larger;
+  }
+  
+  hr {
+    display: none;
+  }
+  
+  /* LIENS */
+  a {
+    text-decoration: none;
+    line-height: 24px;
+    color: #fe8fd5;
+  }
+  
+  a:hover {
+    color: #a7fff3;
+  }
+  
+  footer a {
+    color: #9966ff;
+    font-family: Arial;
+    font-size: medium;
+  }
+  
+  /* Images et MÃ©dia*/
+  audio {
+    width: 100%;
+  }
+  
+  /* LÃ©gendes */
+  figcaption {
+    line-height: 30px;
+    height: 30px;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+  }
+  
+  figure {
+    padding: 15px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 20px;
+  }
+  
+  img {
+    border-radius: 30px;
+   border: 1px solid #eb41ce;
+  
+  }  
+  video {
+    margin-left: 75px;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 3px solid #eb41ce;
+  }
+  
+ 
