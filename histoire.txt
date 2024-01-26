@@ -1,0 +1,10 @@
+//tu allumes ton téléphone et regarde Datie et tu reçois un message de Lydia//
+Premiere Q: Comment DM ?
+V : "Holà misstinguette. Comment tu vas? ;)"
+N : "Salut ça va ?
+F : "Utilise  une disquette = red flags"
+//Reponse de Lydia: "Salut monsieur, jolie photo ;)"//
+Default: "Merci miss"
+//Lydia: "Tu fais quoi dans la vie ?"
+Q2 : 
+V  : "
