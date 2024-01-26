@@ -39,11 +39,11 @@ nav a:hover{
 /*Début de CSS Classique*/
 
 html {
-    background-color: #6a040f;
+    { background-image: url('')
+      }
   }
   
   body {
-    background-color: #f76868;
     font-family: Arial;
     text-align: justify;
     color: #03071e;
@@ -66,6 +66,16 @@ html {
   
   /* Titres */
   h1 {
+    color: #03071e;
+    text-decoration: none;
+    text-align: center;
+    clear: right;
+    border-radius: 50px;
+    margin: 5px;
+    text-shadow: #6a040f 2px 2px 0px;
+    padding: 5px;
+  }
+  h2 {
     color: #03071e;
     text-decoration: none;
     text-align: center;
@@ -135,4 +145,9 @@ html {
     border: 3px solid #eb41ce;
   }
   
- 
+/*Div*/
+.divGauche{
+  background-color: #f76868;
+  float: left;
+  padding: 450px 200px;
+} 
