@@ -4,68 +4,113 @@ V : "Holà misstinguette. Comment tu vas? ;)"
 N : "Salut ça va ?
 F : "Utilise  une disquette = red flags"
 //Reponse de Lydia: "Salut monsieur, jolie photo ;)"//
-Default: "Merci miss"
-//Lydia: Q2 : "Tu fais quoi dans la vie ?"
-V  : "je suis ingénieure aerospaciale."
-N  : "je travail en tant que maçon."
-F  : "je suis au chômage"
+Default J: "Merci miss"
+
+//joueur: Q: 
+V:"Tu fais quoi dans la vie ?"
+N:"Tu as le permis de conduire? "
+F:"Est-ce que tu es sur Onlyfan?" 
+
+
+
+
 //Lydia: Q3 : "Tu es tres proche de ta famille?"
 V  :" Oui je suis tres proche et au petit soin"
 N  :" oui et non car on ne se voit pas trop"
 F  :" non je les aimes pas "
-//Lydia: Q : ""
+
+
+
+//joueur: Q4 : ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q5: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q6: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q7: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q8: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q9: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+
+//Lydia: Q10: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q11: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+
+//Lydia: Q12: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q13: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+
+
+//Lydia: Q14: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+
+
+
+//Lydia: Q15: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+//Lydia: Q16: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+//Lydia: Q17: ""
 V  :
 N  :
 F  :
