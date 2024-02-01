@@ -5,6 +5,71 @@ N : "Salut ça va ?
 F : "Utilise  une disquette = red flags"
 //Reponse de Lydia: "Salut monsieur, jolie photo ;)"//
 Default: "Merci miss"
-//Lydia: "Tu fais quoi dans la vie ?"
-Q2 : 
-V  : "
+//Lydia: Q2 : "Tu fais quoi dans la vie ?"
+V  : "je suis ingénieure aerospaciale."
+N  : "je travail en tant que maçon."
+F  : "je suis au chômage"
+//Lydia: Q3 : "Tu es tres proche de ta famille?"
+V  :" Oui je suis tres proche et au petit soin"
+N  :" oui et non car on ne se voit pas trop"
+F  :" non je les aimes pas "
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
+//Lydia: Q : ""
+V  :
+N  :
+F  :
