@@ -56,13 +56,7 @@ html {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
-  @media screen and (max-width: 1300px) {
-    footer {
-      font-size: xx-small;
-    }
-  }
-  
+
   /* Titres */
   h1 {
     color: #03071e;
@@ -112,31 +106,7 @@ html {
     font-size: medium;
   }
   
-  /* Images et MÃ©dia*/
-  audio {
-    width: 100%;
-  }
-  
   /* LÃ©gendes */
-  figcaption {
-    line-height: 30px;
-    height: 30px;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 12px;
-  }
-  
-  figure {
-    padding: 15px;
-    border: 1px solid rgb(204, 204, 204);
-    margin-bottom: 20px;
-  }
-  
-  img {
-    border-radius: 30px;
-   border: 1px solid #eb41ce;
-  
-  }  
   video {
     margin-left: 75px;
     margin-right: auto;
@@ -148,5 +118,13 @@ html {
 .divGauche{
   background-color: #f76868;
   float: left;
-  padding: 450px 200px;
+  width: 25%;
+  height: 1000px;
+  
 } 
+
+.divDroite{
+  background-color: #c01313;
+  float: right;
+  width: 75%;
+}
