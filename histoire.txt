@@ -1,4 +1,5 @@
 //tu allumes ton téléphone et regarde Datie et tu reçois un message de Lydia//
+
 Premiere Q: Comment DM ?
 V : "Holà misstinguette. Comment tu vas? ;)"
 N : "Salut ça va ?
@@ -11,7 +12,8 @@ V:"Tu fais quoi dans la vie ?"
 N:"Tu as le permis de conduire? "
 F:"Est-ce que tu es sur Onlyfan?" 
 
-
+Default L:
+repoonse fausse : "Euhh tu dégages enfaite!"
 
 
 //Lydia: Q3 : "Tu es tres proche de ta famille?"
@@ -21,24 +23,22 @@ F  :" non je les aimes pas "
 
 
 
-//joueur: Q4 : ""
-V  :
-N  :
-F  :
+//joueur: Q : "Quel est ton plus grand rêve dans la vie?"
+default L :
 
 
 
-//Lydia: Q5: ""
-V  :
-N  :
-F  :
+//Lydia: Q5: "Et toi ?"
+V  :"C'est de faire le tour du monde"
+N  :"D'etre heureux et bien financièrement
+F  :"D'etre challenger sur LOL"
 
+Default L:
 
-
-//Lydia: Q6: ""
-V  :
-N  :
-F  :
+//joueur: Q :
+V  :" Quel est ton plat préféré"
+N  :" 
+F  :" Tu es sorti avec beaucoup de garçon"
 
 
 
