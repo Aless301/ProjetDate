@@ -55,17 +55,20 @@ V  :"action : faire un slow avec la musique seulement"
 V  :"action : chifoumi"
 F  :"action : regarder un film tu t'endors sur le coté du canapé et elle se vexe"
 
-Default if positif => action : slow elle est ravie et te propose de sortir// action chifoumi : elle s'amuse bien et te propose d'aller dans le jardin.
+Default if positif => action : slow elle est ravie et te propose de sortir en ville elle va en voiture// action chifoumi : elle s'amuse bien et te propose d'aller dans le jardin.
         if negatif => fin du date
 
 //SORTIE EN VILLE//
-//Lydia: Q8: ""
-V  :
-N  :
-F  :
+//"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
+Arret a la boutique de robe
+Question 08: Tu penses que tu peux m'offrir cette robe?"
+V  :"J'aurai pu mais la robe est loin d'etre suffisament belle pour toi."
+N  :"Oui c'est 399€ seulement aucun probleme."
+F  :"Non j'economise pour un acheter des Nitros a des e-girls sur discord desole.
+default : vous repartez en voiture
 
-
-
+//"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
+Arret 
 //Lydia: Q9: ""
 V  :
 N  :
