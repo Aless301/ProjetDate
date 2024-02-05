@@ -42,9 +42,9 @@ $q7 = array (
 )
 
 $q8 = array (
-[1,'']
-[2,'']
-[3,'']
+[1,"J'aurai pu mais la robe est loin d'être suffisament belle pour toi."]
+[2,"Oui, c'est 399€ seulement aucun problème."]
+[3,"Non, j'économise pour acheter des Nitros à des E-girls sur discord, désolé."]
 )
 
 $q9 = array (
