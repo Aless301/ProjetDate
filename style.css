@@ -125,7 +125,55 @@ html {
 
 .divDroite{
   background-color: #c01313;
+  color: white;
   float: right;
   width: 75%;
-  padding: 20px;
 }
+
+/*Bulle de texte*/
+.bubbleG{
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: gray;
+  position: relative;
+}
+.bubbleD{
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: blue;
+  position: relative;
+}
+.bubbleQ{
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: green;
+  position: relative;
+}
+
+.arrow {             
+  position: absolute;             
+  width: 0;             
+  height: 0;             
+  border-style: solid;         
+}
+
+.left-arrow {
+      border-width: 10px 15px 10px 0;
+      border-color: transparent #e6e6e6 transparent transparent;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+  }
+  .right-arrow {
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #e6e6e6;
+      top: 50%;
+      right: -15px;
+      transform: translateY(-50%);
+  }

@@ -4,36 +4,54 @@ include('includes/header.php');
 <?php
 $_POST['score'] = 0;
 ?>
+
 <div class="divDroite">
-<fieldset>
-    <legend>Comment Lancer la discussion ? </legend>
-    <form action="index.php" method="post">
-        <input type="radio" id="r1" name="r1" value="1">
-        <label for="president">Holà misstinguette, comment tu vas ?</label><br>
 
-        <input type="radio" id="r2" name="r2" value="2">
-        <label for="president1">Salut ça va ?</label><br>
+    <div class="bubbleG">
+        <div class="arrow left-arrow"></div>
+        <p>Comment Lancer la discussion ? </p>
+    </div>
 
-        <input type="radio" id="r3" name="r3" value="3">
-        <label for="president2">Excuse moi tu aurais pas fais la guerre ? Car tu es canon !</label><br>
+    <div class="bubbleQ">
+        <form action="index.php" method="post">
+            <input type="radio" id="r1" name="r1" value="1">
+            <label for="president">Holà misstinguette, comment tu vas ?</label><br>
 
-        <input class="bouton" type="submit" value="↪">
+            <input type="radio" id="r2" name="r2" value="2">
+            <label for="president1">Salut ça va ?</label><br>
 
-    </form>
-</fieldset>
-<?php
-if (isset($_POST['r1'])) {
-    echo 'Salut monsieur, jolie photo.';
-    $_POST['score'] = $_POST['score'] + 5;
-}
-if (isset($_POST['r2'])) {
-    echo 'Salut monsieur, jolie photo.';
-}
-if (isset($_POST['r3'])) {
-    echo 'Je passe et double pour la prochaine personne.';
-    $_POST['score'] = $_POST['score'] - 5;
-}
-?>
+            <input type="radio" id="r3" name="r3" value="3">
+            <label for="president2">Excuse moi tu aurais pas fais la guerre ? Car tu es canon !</label><br>
+
+            <input class="bouton" type="submit" value="↪">
+        </form>
+    </div>
+        <?php
+        if (isset($_POST['r1'])) {
+            echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> Holà misstinguette, comment tu vas ? </div>';
+        }
+        if (isset($_POST['r2'])) {
+            echo '<div class="bubbleD">  <div class="arrow right-arrow"></div>Salut ça va ? </div>';
+        }
+        if (isset($_POST['r3'])) {
+            echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> Excuse moi tu aurais pas fais la guerre ? Car tu es canon ! </div>';
+        }
+        ?>
+    
+        <?php
+            if (isset($_POST['r1'])) {
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Salut monsieur, jolie photo. </div>';
+                $_POST['score'] = $_POST['score'] + 5;
+        } 
+            elseif (isset($_POST['r2'])) {
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Salut monsieur, jolie photo. </div>';
+        } 
+            elseif (isset($_POST['r3'])) {
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Je passe et double pour la prochaine personne. </div>';
+                $_POST['score'] = $_POST['score'] - 5;
+        }
+        ?>
+
 </div>
 <div class="divGauche">
     <?php
