@@ -1,54 +1,64 @@
 //tu allumes ton téléphone et regarde Datie et tu reçois un message de Lydia//
-
+//ENTRER//
 Premiere Q: Comment DM ?
-V : "Holà misstinguette. Comment tu vas? ;)"
+V : "Holà misstinguette. Comment tu vas? "
 N : "Salut ça va ?
 F : "Utilise  une disquette = red flags"
-//Reponse de Lydia: "Salut monsieur, jolie photo ;)"//
+//Reponse de Lydia: "Salut monsieur, jolie photo "//
 Default J: "Merci miss"
 
-//joueur: Q: 
-V:"Tu fais quoi dans la vie ?"
-N:"Tu as le permis de conduire? "
-F:"Est-ce que tu es sur Onlyfan?" 
+//joueur Q2:"Tu veux rentrer ?"
+V:"Si tu me le permets."
+N:"Oui."
+F:"Non." 
 
 Default L:
-repoonse fausse : "Euhh tu dégages enfaite!"
+repoonse fausse : "Ah" //inserer meme de Denis Brognart//
 
-
-//Lydia: Q3 : "Tu es tres proche de ta famille?"
+//ENTRER DANS LE SALON//
+//Joueur: Q3 : "Tu es tres proche de ta famille?"
 V  :" Oui je suis tres proche et au petit soin"
 N  :" oui et non car on ne se voit pas trop"
-F  :" non je les aimes pas "
+F  :" Non j'ai une jeffrey dahmer"
+
+Default L: si positif => Super j'adore les garçons canards
+           si negatif => Desole mais si tu respectes pas ta famille c'est non
+
+//joueur Q4 : "T'aimes bien la musique?"
+V :"Oui j'aime le jazz"
+N :"J'aime les musiques de soirées"
+F :"J'aime le rock country et le rap indien"
+default L : si positif => Lydia met de la musique jazzy et va manger
+            si negatif => Tant pis on va manger
 
 
 
-//joueur: Q : "Quel est ton plus grand rêve dans la vie?"
-default L :
+//Lydia: Q5: "Tu sais cuisiner?"
+V  :"Oui j'ai fais top chef junior en Franche-Comté"
+N  :"J'ai deja fais des pates"
+F  :"La place de la femme c'est a la KUISINE"
+Default L : si positif => ils font a manger a deux
+            si negatif => elle se vexe et degage le main caractere
+
+
+//joueur: Q 6: "tu veux du vin avec ton repas?" 
+V  :" action : 1 verre"
+F  :" action : 2 verres"
+F  :" action : 3 verres"
+default L : si positif : elle contente repas se passe bien puis retourne dans le salon
+            si negatif : elle pense que tu es alcolo
 
 
 
-//Lydia: Q5: "Et toi ?"
-V  :"C'est de faire le tour du monde"
-N  :"D'etre heureux et bien financièrement
-F  :"D'etre challenger sur LOL"
+//Lydia: Q7: "Tu veux faire quoi ?"
+V  :"action : faire un slow avec la musique seulement"
+V  :"action : chifoumi"
+F  :"action : regarder un film tu t'endors sur le coté du canapé et elle se vexe"
 
-Default L:
+Default if positif => action : slow elle est ravie et te propose de sortir// action chifoumi : elle s'amuse bien et te propose d'aller dans le jardin.
+        if negatif => fin du date
 
-//joueur: Q :
-V  :" Quel est ton plat préféré"
-N  :" 
-F  :" Tu es sorti avec beaucoup de garçon"
-
-
-
-//Lydia: Q7: ""
-V  :
-N  :
-F  :
-
-
-
+//SORTIE EN VILLE//
 //Lydia: Q8: ""
 V  :
 N  :
@@ -106,15 +116,59 @@ F  :
 V  :
 N  :
 F  :
+
+
 //Lydia: Q16: ""
 V  :
 N  :
 F  :
+
+
 //Lydia: Q17: ""
 V  :
 N  :
 F  :
-//Lydia: Q : ""
+//Lydia: Q18: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q19: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q20: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q21: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q22: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q23: ""
+V  :
+N  :
+F  :
+
+//Lydia: Q24: ""
+V  :
+N  :
+F  :
+
+//Lydia: Q25: ""
 V  :
 N  :
 F  :
