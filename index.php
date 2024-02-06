@@ -40,14 +40,14 @@ $_POST['score'] = 0;
     
         <?php
             if (isset($_POST['r1'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Salut monsieur, jolie photo. </div>';
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Salut monsieur, jolie photo. </div>';
                 $_POST['score'] = $_POST['score'] + 5;
         } 
             elseif (isset($_POST['r2'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Salut monsieur, jolie photo. </div>';
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Salut monsieur, jolie photo. </div>';
         } 
             elseif (isset($_POST['r3'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"> Je passe et double pour la prochaine personne. </div>';
+                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Je passe et double pour la prochaine personne. </div>';
                 $_POST['score'] = $_POST['score'] - 5;
         }
         ?>
