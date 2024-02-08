@@ -117,8 +117,8 @@ html {
 /*Div*/
 .divGauche{
   background-color: #f76868;
-  float: left;
   width: 25%;
+  float: left;
   height: 1000px;
   
 } 

@@ -2,9 +2,8 @@
 include('includes/header.php');
 ?>
 <?php
-$_POST['score'] = 0;
+$_SESSION['score'] = 0;
 ?>
-
 <div class="divDroite">
 
     <div class="bubbleG">
@@ -13,7 +12,7 @@ $_POST['score'] = 0;
     </div>
 
     <div class="bubbleQ">
-        <form action="index.php" method="post">
+        <form action="q2.php" method="post">
             <input type="radio" id="r1" name="r1" value="1">
             <label for="president">Holà misstinguette, comment tu vas ?</label><br>
 
@@ -26,36 +25,10 @@ $_POST['score'] = 0;
             <input class="bouton" type="submit" value="↪">
         </form>
     </div>
-        <?php
-        if (isset($_POST['r1'])) {
-            echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> Holà misstinguette, comment tu vas ? </div>';
-        }
-        if (isset($_POST['r2'])) {
-            echo '<div class="bubbleD">  <div class="arrow right-arrow"></div>Salut ça va ? </div>';
-        }
-        if (isset($_POST['r3'])) {
-            echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> Excuse moi tu aurais pas fais la guerre ? Car tu es canon ! </div>';
-        }
-        ?>
-    
-        <?php
-            if (isset($_POST['r1'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Salut monsieur, jolie photo. </div>';
-                $_POST['score'] = $_POST['score'] + 5;
-        } 
-            elseif (isset($_POST['r2'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Salut monsieur, jolie photo. </div>';
-        } 
-            elseif (isset($_POST['r3'])) {
-                echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> Je passe et double pour la prochaine personne. </div>';
-                $_POST['score'] = $_POST['score'] - 5;
-        }
-        ?>
-
 </div>
 <div class="divGauche">
     <?php
-    echo $_POST['score'];
+    echo $_SESSION['score'];
     ?>
 </div>
 <?php
