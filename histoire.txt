@@ -1,6 +1,6 @@
 //tu allumes ton téléphone et regarde Datie et tu reçois un message de Lydia//
 //ENTRER//
-Premiere Q: Comment DM ?
+Premiere Q1: Comment DM ?
 V : "Holà misstinguette. Comment tu vas? "
 N : "Salut ça va ?
 F : "Utilise  une disquette = red flags"
@@ -31,9 +31,12 @@ F :"J'aime le rock country et le rap indien"
 default L : si positif => Lydia met de la musique jazzy et va manger
             si negatif => Tant pis on va manger
 
+//Lydia: Q5: "C'est quoi ton style vestimentaire ?"
+V  :"je m'habille en old money"
+N  :"je suis fashion week du streetwear"
+F  :" je m'habille  gothique"
 
-
-//Lydia: Q5: "Tu sais cuisiner?"
+//Lydia: Q6: "Tu sais cuisiner?"
 V  :"Oui j'ai fais top chef junior en Franche-Comté"
 N  :"J'ai deja fais des pates"
 F  :"La place de la femme c'est a la KUISINE"
@@ -41,7 +44,7 @@ Default L : si positif => ils font a manger a deux
             si negatif => elle se vexe et degage le main caractere
 
 
-//joueur: Q 6: "tu veux du vin avec ton repas?" 
+//joueur: Q7: "tu veux du vin avec ton repas?" 
 V  :" action : 1 verre"
 F  :" action : 2 verres"
 F  :" action : 3 verres"
@@ -50,7 +53,7 @@ default L : si positif : elle contente repas se passe bien puis retourne dans le
 
 
 
-//Lydia: Q7: "Tu veux faire quoi ?"
+//Lydia: Q8: "Tu veux faire quoi ?"
 V  :"action : faire un slow avec la musique seulement"
 V  :"action : chifoumi"
 F  :"action : regarder un film tu t'endors sur le coté du canapé et elle se vexe"
@@ -61,7 +64,8 @@ Default if positif => action : slow elle est ravie et te propose de sortir en vi
 //SORTIE EN VILLE//
 //"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
 Arret a la boutique de robe
-Question 08: Tu penses que tu peux m'offrir cette robe?"
+
+Question 09: Tu penses que tu peux m'offrir cette robe?"
 V  :"J'aurai pu mais la robe est loin d'etre suffisament belle pour toi."
 N  :"Oui c'est 399€ seulement aucun probleme."
 F  :"Non j'economise pour un acheter des Nitros a des e-girls sur discord desole.
@@ -69,18 +73,11 @@ default : vous repartez en voiture
 
 //"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
 Arret 
-//Lydia: Q9: "C'est quoi ton style vestimentaire ?"
-V  :"je m'habille en old money"
-N  :""
-F  :" je m'habille  gothique"
-
-
-
-
 //Lydia: Q10: ""
 V  :
 N  :
 F  :
+
 
 
 
@@ -91,11 +88,11 @@ F  :
 
 
 
-
 //Lydia: Q12: ""
 V  :
 N  :
 F  :
+
 
 
 
@@ -106,8 +103,6 @@ F  :
 
 
 
-
-
 //Lydia: Q14: ""
 V  :
 N  :
@@ -115,10 +110,13 @@ F  :
 
 
 
+
+
 //Lydia: Q15: ""
 V  :
 N  :
 F  :
+
 
 
 //Lydia: Q16: ""
@@ -131,12 +129,12 @@ F  :
 V  :
 N  :
 F  :
+
+
 //Lydia: Q18: ""
 V  :
 N  :
 F  :
-
-
 //Lydia: Q19: ""
 V  :
 N  :
@@ -165,6 +163,7 @@ F  :
 V  :
 N  :
 F  :
+
 
 //Lydia: Q24: ""
 V  :
