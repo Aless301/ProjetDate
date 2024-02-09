@@ -24,36 +24,42 @@ $q4 = array (
 )
 
 $q5 = array (
+[1,"Je m'habille en old money"]
+[2,"Je suis fashion-week du streetwear"]
+[3,"Je m'habille gothique"]
+)
+
+$q6 = array (
 [1,"Oui, j'ai fais top chef junior en Franche-comté"]
 [2,"J'ai déjà fais des pâtes"]
 [3,"La place de la femme c'est à la KUISINE"]
 )
 
-$q6 = array (
+$q7 = array (
 [1,'1 verre']
 [2,'2 verres']
 [3,'3 verres']
 )
 
-$q7 = array (
+$q8 = array (
 [1,'Action : faire un slow avec la musique seulement']
 [2,'Action :chifoumi']
 [3,"Action : regarder un film, si tu t'endors sur le côté cu canapé et elle se vexe"]
 )
 
-$q8 = array (
+$q9 = array (
 [1,"J'aurai pu mais la robe est loin d'être suffisament belle pour toi."]
 [2,"Oui, c'est 399€ seulement aucun problème."]
 [3,"Non, j'économise pour acheter des Nitros à des E-girls sur discord, désolé."]
 )
 
-$q9 = array (
-[1,'']
-[2,'']
-[3,'']
+$q10 = array (
+[1,""]
+[2,""]
+[3,""]
 )
 
-$q10 = array (
+$q11 = array (
 [1,'']
 [2,'']
 [3,'']

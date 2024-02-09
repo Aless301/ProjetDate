@@ -14,6 +14,7 @@ GREEN FLAGS
 -etre social
 -etre inquiet pour ses proches
 -etre mature
+-avoir une renault clio
 -regarder talmo
 
 
@@ -25,7 +26,6 @@ RED FLAGS
 -etre geek
 -porter des TN
 -etre habillé comme un lacoste TN
--avoir une renault clio
 -etre hypocrite avec les gens
 -etre vulgaire 
 -etre aigris tout le temps
