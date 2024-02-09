@@ -69,10 +69,10 @@ default : vous repartez en voiture
 
 //"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
 Arret 
-//Lydia: Q9: ""
-V  :
-N  :
-F  :
+//Lydia: Q9: "C'est quoi ton style vestimentaire ?"
+V  :"je m'habille en old money"
+N  :""
+F  :" je m'habille  gothique"
 
 
 
