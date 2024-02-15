@@ -77,36 +77,33 @@ F: "Non, j'économise pour acheter des Nitros à des e-girls sur Discord, désol
 
 // Default après la question 9: vous repartez en voiture
 
-//"Voulez-vous continuez?" if oui regarder les questions if non continuer a poser la questions//
-Arret 
+//DERNIER ARRET, En haut d'une colline
 
-//Lydia: Q10: ""
-V  :
-N  :
-F  :
+//Lydia: Q10: "Merci pour la soirée!"
+F  :"ACTION : lui dire que c'etait chiant" 
+V  :"ACTION : Tout petit bisou sur la joue"
+F  :"ACTION : La pousser de la colline"
 
-
-
-
-//Lydia: Q11: ""
-V  :
-N  :
-F  :
+//DANS LE JARDIN
+//Lydia: Q11: "Tu veux faire quoi?"
+N  :Regarder un live twitch sur le grand ecran?
+N  :Aller regarder la lune au telescope
+N  :Parler de voiture
 
 
 
-//Lydia: Q12: ""
-V  :
-N  :
-F  :
+//Lydia: Q12: "Tu veux regarder qui?"
+V  : Talmo je suis un grand fan neuuueil 
+N  : Ptit squeezie il live aujourd'hui 
+F  : Sardoche j'adore league of legends et ne pas me laver
 
 
 
 
-//Lydia: Q13: ""
-V  :
-N  :
-F  :
+//Lydia: Q13: "Quelle est la constellation d'Orion?"
+F  :A Cassiopée
+F  :B Grande Ours
+V  :C Orion
 
 
 
