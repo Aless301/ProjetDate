@@ -50,12 +50,12 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_SESSION['r1'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Salut monsieur, jolie photo. </p> </div>';
-        $_SESSION['score'] = $_POST['score'] + 5;
+        $_SESSION['score'] = $_SESSION['score'] + 5;
     } elseif (isset($_SESSION['r2'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Salut monsieur, jolie photo. </p> </div>';
     } elseif (isset($_SESSION['r3'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Je passe et double pour la prochaine personne. </p> </div>';
-        $_SESSION['score'] = $_POST['score'] - 5;
+        $_SESSION['score'] = $_SESSIONST['score'] - 5;
     }
     ?>
 
@@ -103,10 +103,10 @@ $_SESSION['score'] = 0;
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Aller entre ! </p> </div>';
     } elseif (isset($_SESSION['r5'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Aller entre ! </p> </div>';
-        $_SESSION['score'] = $_POST['score'] + 5;
+        $_SESSION['score'] = $_SESSION['score'] + 5;
     } elseif (isset($_SESSION['r6'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ah ! </br> <img src="images/ah.png" alt="Denis Brognart Ah"> </p> </div>';
-        $_SESSION['score'] = $_POST['score'] - 5;
+        $_SESSION['score'] = $_SESSION['score'] - 5;
     }
     ?>
 
