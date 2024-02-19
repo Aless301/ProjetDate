@@ -15,6 +15,6 @@ session_start();
     <img style="float: right;" src="../logo.png" alt="">
     <ul>
         <li><a href="../index.php">Index</a></li>
-        <li><a href="">"Pseado"</a></li>
+        <li><a href="q1.php">.</a></li>
     </ul>
 </nav>

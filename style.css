@@ -118,7 +118,7 @@ video {
   background-color: #f76868;
   width: 25%;
   float: left;
-  height: 1000px;
+  height: 10000000px;
 }
 
 .divDroite {
@@ -144,6 +144,7 @@ video {
   border-radius: 10px;
   background-color: blue;
   position: relative;
+
 }
 .bubbleQ {
   max-width: 300px;
