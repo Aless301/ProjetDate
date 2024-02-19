@@ -88,6 +88,10 @@ hr {
   display: none;
 }
 
+.bouton{
+  margin: 10px;
+}
+
 /* LIENS */
 a {
   text-decoration: none;
@@ -113,6 +117,10 @@ video {
   border: 3px solid #eb41ce;
 }
 
+.meme {
+  margin: 10px;
+}
+
 /*Div*/
 .divGauche {
   background-color: #f76868;
@@ -126,32 +134,37 @@ video {
   color: white;
   float: right;
   width: 75%;
+/*Image d'arrière plan (téléphone)*/
+  background-image: url('images/background.png');
+  background-size: cover; /* Pour couvrir toute la div */
+  background-position: center; /* Position de l'image au centre */
+  background-repeat: repeat; /* Répétition de l'image */
 }
 
 /*Bulle de texte*/
 .bubbleG {
-  max-width: 300px;
+  max-width: 350px;
   padding: 10px;
-  margin: 10px;
+  margin: 15px 70px 15px 70px;
   border-radius: 10px;
   background-color: gray;
   position: relative;
 }
 .bubbleD {
-  max-width: 300px;
+  max-width: 350px;
   padding: 10px;
-  margin: 10px;
+  margin: 15px 10px 15px 960px;
   border-radius: 10px;
   background-color: blue;
   position: relative;
 
 }
 .bubbleQ {
-  max-width: 300px;
+  max-width: 400px;
   padding: 10px;
-  margin: 10px;
+  margin: 15px 10px 15px 500px;
   border-radius: 10px;
-  background-color: green;
+  background-color: rgb(181, 212, 0);
   position: relative;
 }
 
