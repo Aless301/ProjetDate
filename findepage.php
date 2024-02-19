@@ -12,7 +12,7 @@
                 if ($_SESSION["score"] > 100) {
                     echo "CHAMPIOOON". $SCORE_SESSION["score"] ;
                     <img src="https://www.gif-maniac.com/gifs/53/53118.gif" alt="Trop Cooool!">
-
+                    <audio src="https://youtu.be/48QA4s2FRE8"></audio>
                     
                 } elseif ($_SESSION["score"] < 100 && $_SESSION["score"] ==0 ) {
                     echo "This is the friendzone";
