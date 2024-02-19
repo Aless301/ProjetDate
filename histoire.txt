@@ -1,0 +1,181 @@
+// Ouverture du téléphone et réception d'un message de Lydia //
+// ENTRER //
+
+// Question 1: Tu viens d'arriver devant sa porte //
+V : "Holà misstinguette. Comment tu vas?"
+N : "Salut ça va?"
+F : "Ah ouais t'es moins belle que sur ta photo"
+
+// Réponse de Lydia: "Salut monsieur, jolie photo" //
+Default J: "Merci miss"
+
+// Joueur Question 2: "Tu veux rentrer ?" //
+V: "Si tu me le permets."
+N: "Oui."
+F: "Ca va aller."
+
+// Default Lydia après la question 2: si positif => Super j'adore les garçons canards
+//                                     si négatif => Désolé, mais si tu ne respectes pas ta famille, c'est non
+
+// ENTRER DANS LE SALON //
+
+// Joueur Question 3: "Tu es très proche de ta famille?" //
+V: "Oui, je suis très proche et au petit soin."
+N: "Oui et non, car on ne se voit pas trop."
+F: "Non, j'ai une Jeffrey Dahmer."
+
+// Default Lydia après la question 3: si positif => Super, j'adore les garçons canards
+//                                     si négatif => Désolé, mais si tu ne respectes pas ta famille, c'est non
+
+// Joueur Question 4: "T'aimes bien la musique?" //
+V: "Oui, j'aime le jazz."
+N: "J'aime les musiques de soirées."
+F: "J'aime le rock country et le rap indien."
+
+// Default Lydia après la question 4: si positif => Lydia met de la musique jazzy et va manger
+//                                     si négatif => Tant pis, on va manger
+
+// Lydia Question 5: "C'est quoi ton style vestimentaire ?" //
+V: "Je m'habille en old money."
+N: "Je suis fashion week du streetwear."
+F: "Je m'habille gothique."
+
+// Lydia Question 6: "Tu sais cuisiner?" //
+V: "Oui, j'ai fait Top Chef Junior en Franche-Comté."
+N: "J'ai déjà fait des pâtes."
+F: "La place de la femme c'est à la KUISINE."
+
+// Default Lydia après la question 6: si positif => ils cuisinent à deux
+//                                     si négatif => elle se vexe et dégage le main caractère
+
+// Joueur Question 7: "Tu veux du vin avec ton repas?" //
+V: "Action : 1 verre."
+F: "Action : 2 verres."
+F: "Action : 3 verres."
+
+// Default Lydia après la question 7: si positif => elle est contente, le repas se passe bien, puis retourne dans le salon
+//                                     si négatif => elle pense que tu es alcoolo
+
+// Lydia Question 8: "Tu veux faire quoi ?" //
+V: "Action : faire un slow avec la musique seulement."
+N: "Action : chifoumi."
+F: "Action : regarder un film, tu t'endors sur le côté du canapé et elle se vexe."
+
+// Default Lydia après la question 8: si positif => action : slow, elle est ravie et te propose de sortir en ville en voiture
+//                                     action chifoumi => elle s'amuse bien et te propose d'aller dans le jardin
+//                                     si négatif => fin du date
+
+// SORTIE EN VILLE //
+// "Voulez-vous continuer?" si oui, regarder les questions, si non, continuer à poser les questions //
+
+// Arrêt à la boutique de robe //
+
+// Question 9: "Tu penses que tu peux m'offrir cette robe?" //
+V: "J'aurais pu, mais la robe est loin d'être suffisamment belle pour toi."
+N: "Oui, c'est 399€ seulement, aucun problème."
+F: "Non, j'économise pour acheter des Nitros à des e-girls sur Discord, désolé."
+
+// Default après la question 9: vous repartez en voiture
+
+//DERNIER ARRET, En haut d'une colline
+
+//Lydia: Q10: "Merci pour la soirée!"
+F  :"ACTION : lui dire que c'etait chiant" 
+V  :"ACTION : Tout petit bisou sur la joue"
+F  :"ACTION : La pousser de la colline"
+
+//DANS LE JARDIN
+//Lydia: Q11: "Tu veux faire quoi?"
+N  :Regarder un live twitch sur le grand ecran?
+N  :Aller regarder la lune au telescope
+N  :Parler de voiture
+
+
+
+//Lydia: Q12: "Tu veux regarder qui?"
+V  : Talmo je suis un grand fan neuuueil 
+N  : Ptit squeezie il live aujourd'hui 
+F  : Sardoche j'adore league of legends et ne pas me laver
+
+
+
+
+//Lydia: Q13: "Quelle est la constellation d'Orion?"
+F  :A Cassiopée
+F  :B Grande Ours
+V  :C Orion
+
+
+
+//Lydia: Q14: "Il fait froid tu trouves pas?"
+V  : "Tu veux ma veste?" => elle accepte et vous rentrez
+N  : "Tu veux rentrer?" => vous rentrez
+F  : "J'ai lu dans un livre qu'il faut se faire pipi dessus pour se rechauffer" => vous rentrez
+
+
+// RENTRAGE A LA MAISON//
+Si tu es a moins de 60 en amour elle dit qu'elle fatigué ça s'arrete
+si pas ça continue
+
+//Lydia: Q15: "La soirée etait cool mais"
+si t'as plus de 100 :Tu veux rester dormir ?
+si t'as entre 0 et 100 non compris  : C'etait cool mais on peut en rester la 
+si t'es en negatif  : C'etait chiant et t'etais peu interessant. La porte est là-bas.
+
+
+
+//Lydia: Q16: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q17: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q18: ""
+V  :
+N  :
+F  :
+//Lydia: Q19: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q20: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q21: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q22: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q23: ""
+V  :
+N  :
+F  :
+
+
+//Lydia: Q24: ""
+V  :
+N  :
+F  :
+
+//Lydia: Q25: ""
+V  :
+N  :
+F  :
