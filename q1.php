@@ -315,7 +315,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 2;
     }
     ?>
-
+//COMMENCER ICI//
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu sais cuisiner ?</p></div>
     
     <div class="bubbleQ">
@@ -367,7 +367,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 2;
     }
     ?>
-
+//FIN ICI//
 </div>
 </div>
 <div class="divGauche">
