@@ -1,6 +1,9 @@
 <?php
 include('includes/header.php');
 ?>
+<?php
+$_SESSION['score'] = 0;
+?>
 <head>
 <meta http-equiv="refresh" content="5;login.php" />
 </head>

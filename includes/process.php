@@ -1,8 +1,8 @@
 <?php
-include('includes/header.php');
+include('header.php');
 ?>
 <head>
-<meta http-equiv="refresh" content="1;findepage.php" />
+<meta http-equiv="refresh" content="1;../findepage.php" />
 </head>
 <?php
 // Vérifie si le formulaire du pseudo a été soumis
@@ -15,12 +15,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $entry = "Nom: $pseudo\n Score: $score\n\n\n";
 
     // Ajoute l'entrée au fichier texte
-    $file = fopen("hall_of_fame.txt", "a");
+    $file = fopen("../hall_of_fame.txt", "a");
     fwrite($file, $entry);
     fclose($file);
 
     exit();
 }
 
-include('includes/footer.php');
+include('footer.php');
 ?>
