@@ -389,9 +389,9 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_POST['r20'])) {
         $_SESSION['r20']=$_POST['r20'];
-    } elseif (isset($_POST['r18'])) {
+    } elseif (isset($_POST['r21'])) {
         $_SESSION['r21']=$_POST['r21'];
-    } elseif (isset($_POST['r19'])) {
+    } elseif (isset($_POST['r22'])) {
         $_SESSION['r22']=$_POST['r22'];
     }
     ?>
