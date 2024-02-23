@@ -520,7 +520,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 10;
     } elseif (isset($_SESSION['r27'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Elle aime bien le gars, il s\'appelle Batiste, un homme tres riche et beau, ils finissent a deux et eurent beaucoup d\'enfant </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        //$_SESSION['score'] = $_SESSION['score'] - 9999999999;
     } elseif (isset($_SESSION['r28'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Il prend peur et commence a fuir a la vue de Théo." </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 5;
