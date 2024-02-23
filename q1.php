@@ -422,55 +422,55 @@ $_SESSION['score'] = 0;
     ?>
 //FIN ICI//
 //COMMENCER ICI//
-<div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu sais cuisiner ?</p></div>
+<div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu penses que tu peux m'offrir cette robe?</p></div>
     
     <div class="bubbleQ">
     <form action="q1.php" method="post">
-            <input type="radio" id="r17" name="r17" value="17">
-            <label for="reponse1"><p>Oui, j'ai fait Top Chef Junior en Franche-Comté.</p></label><br>
+            <input type="radio" id="r23" name="r23" value="23">
+            <label for="reponse1"><p>Oui, c'est 399€ seulement, aucun problème.</p></label><br>
 
-            <input type="radio" id="r18" name="r18" value="18">
-            <label for="reponse2"><p>La place de la femme c'est à la cuisine.</p></label><br>
+            <input type="radio" id="r24" name="r24" value="24">
+            <label for="reponse2"><p>Non, j'économise pour acheter des Nitros à des e-girls sur Discord, désolé.</p></label><br>
 
-            <input type="radio" id="r19" name="r19" value="19">
-            <label for="reponse3"><p>J'ai déjà fait des pâtes.</p></label><br>
+            <input type="radio" id="r25" name="r25" value="25">
+            <label for="reponse3"><p>J'aurais pu, mais la robe est loin d'être suffisamment belle pour toi.</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
     </div>
 
     <?php
-    if (isset($_POST['r17'])) {
-        $_SESSION['r17']=$_POST['r17'];
+    if (isset($_POST['r23'])) {
+        $_SESSION['r23']=$_POST['r23'];
     } elseif (isset($_POST['r18'])) {
-        $_SESSION['r18']=$_POST['r18'];
-    } elseif (isset($_POST['r19'])) {
-        $_SESSION['r19']=$_POST['r19'];
+        $_SESSION['r24']=$_POST['r24'];
+    } elseif (isset($_POST['r25'])) {
+        $_SESSION['r25']=$_POST['r25'];
     }
     ?>
 
 <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Oui, j\'ai fait Top Chef Junior en Franche-Comté. </p> </div>';
+    if (isset($_SESSION['r23'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Oui, c\'est 399€ seulement, aucun problème. </p> </div>';
     }
-    if (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> La place de la femme c\'est à la cuisine. </p> </div>';
+    if (isset($_SESSION['r24'])) {
+        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> Non, j\'économise pour acheter des Nitros à des e-girls sur Discord, désolé. </p> </div>';
     }
-    if (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p>  J\'ai déjà fait des pâtes. </p> </div>';
+    if (isset($_SESSION['r25'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> J\'aurais pu, mais la robe est loin d\'être suffisamment belle pour toi.  </p> </div>';
     }
     ?>
 
     <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "ils cuisinent à deux." </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 8;
-    } elseif (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> elle se vexe et dégage le main caractère. </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
-    } elseif (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ca va, ca passe. </p> </div>';
+    if (isset($_SESSION['r23'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Elle essaye sa robe et elle est contente" </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 2;
+    } elseif (isset($_SESSION['r24'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle se vexe et elle te dégage </p> </div>';
+    //    $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+    } elseif (isset($_SESSION['r25'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle hesite d\'acheter une robe de marié </p> </div>';
+        $_SESSION['score'] = $_SESSION['score'] + 8;
     }
     ?>
 //FIN ICI//
