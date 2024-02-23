@@ -687,55 +687,56 @@ $_SESSION['score'] = 0;
     ?>
 //FIN ICI//
 //COMMENCER ICI//
-<div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu sais cuisiner ?</p></div>
-    
+<div class="bubbleG"><div class="arrow left-arrow"></div><p>Quelle est la constellation d'Orion?
+</p></div>
+   
     <div class="bubbleQ">
     <form action="q1.php" method="post">
-            <input type="radio" id="r17" name="r17" value="17">
-            <label for="reponse1"><p>Oui, j'ai fait Top Chef Junior en Franche-Comté.</p></label><br>
-
-            <input type="radio" id="r18" name="r18" value="18">
-            <label for="reponse2"><p>La place de la femme c'est à la cuisine.</p></label><br>
-
-            <input type="radio" id="r19" name="r19" value="19">
-            <label for="reponse3"><p>J'ai déjà fait des pâtes.</p></label><br>
-
+            <input type="radio" id="r38" name="r38" value="38">
+            <label for="reponse1"><p>A: Grande Ours</p></label><br>
+ 
+            <input type="radio" id="r39" name="r39" value="39">
+            <label for="reponse2"><p>B: Cassiopéel</p></label><br>
+ 
+            <input type="radio" id="r40" name="r40" value="40">
+            <label for="reponse3"><p>C Orion</p></label><br>
+ 
             <input class="bouton" type="submit" value="↪">
         </form>
     </div>
-
+ 
     <?php
-    if (isset($_POST['r17'])) {
-        $_SESSION['r17']=$_POST['r17'];
-    } elseif (isset($_POST['r18'])) {
-        $_SESSION['r18']=$_POST['r18'];
-    } elseif (isset($_POST['r19'])) {
-        $_SESSION['r19']=$_POST['r19'];
+    if (isset($_POST['r38'])) {
+        $_SESSION['r38']=$_POST['r38'];
+    } elseif (isset($_POST['r39'])) {
+        $_SESSION['r39']=$_POST['r39'];
+    } elseif (isset($_POST['r40'])) {
+        $_SESSION['r40']=$_POST['r40'];
     }
     ?>
-
+ 
 <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Oui, j\'ai fait Top Chef Junior en Franche-Comté. </p> </div>';
+    if (isset($_SESSION['r38'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> A: Cassiopée</p> </div>';
     }
-    if (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> La place de la femme c\'est à la cuisine. </p> </div>';
+    if (isset($_SESSION['r39'])) {
+        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p>B: Grande Ours</p> </div>';
     }
-    if (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p>  J\'ai déjà fait des pâtes. </p> </div>';
+    if (isset($_SESSION['r40'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p>C: Orion</p> </div>';
     }
     ?>
-
+ 
     <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "ils cuisinent à deux." </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 8;
-    } elseif (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> elle se vexe et dégage le main caractère. </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
-    } elseif (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ca va, ca passe. </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 2;
+    if (isset($_SESSION['r38'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p>Nan c\'est Orion</p> </div>';
+        $_SESSION['score'] = $_SESSION['score'] + 0;
+    } elseif (isset($_SESSION['r39'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Nan c\'est Orion</p> </div>';
+       $_SESSION['score'] = $_SESSION['score'] + 0;
+    } elseif (isset($_SESSION['r40'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ouiiiiiiii</p> </div>';
+        $_SESSION['score'] = $_SESSION['score'] +1;
     }
     ?>
 //FIN ICI//
