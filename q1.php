@@ -581,55 +581,55 @@ $_SESSION['score'] = 0;
     ?>
 //FIN ICI//
 //COMMENCER ICI//
-<div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu sais cuisiner ?</p></div>
-    
+<div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu veux faire quoi?</p></div>
+   
     <div class="bubbleQ">
     <form action="q1.php" method="post">
-            <input type="radio" id="r17" name="r17" value="17">
-            <label for="reponse1"><p>Oui, j'ai fait Top Chef Junior en Franche-Comté.</p></label><br>
-
-            <input type="radio" id="r18" name="r18" value="18">
-            <label for="reponse2"><p>La place de la femme c'est à la cuisine.</p></label><br>
-
-            <input type="radio" id="r19" name="r19" value="19">
-            <label for="reponse3"><p>J'ai déjà fait des pâtes.</p></label><br>
-
+            <input type="radio" id="r32" name="r17" value="32">
+            <label for="reponse1"><p>Aller regarder la lune au telescope</p></label><br>
+ 
+            <input type="radio" id="r33" name="r18" value="33">
+            <label for="reponse2"><p>Parler de voiture</p></label><br>
+ 
+            <input type="radio" id="r34" name="r19" value="34">
+            <label for="reponse3"><p>Regarder un live twitch sur le grand ecran?</p></label><br>
+ 
             <input class="bouton" type="submit" value="↪">
         </form>
     </div>
-
+ 
     <?php
-    if (isset($_POST['r17'])) {
-        $_SESSION['r17']=$_POST['r17'];
-    } elseif (isset($_POST['r18'])) {
-        $_SESSION['r18']=$_POST['r18'];
-    } elseif (isset($_POST['r19'])) {
-        $_SESSION['r19']=$_POST['r19'];
+    if (isset($_POST['r32'])) {
+        $_SESSION['r32']=$_POST['r32'];
+    } elseif (isset($_POST['r33'])) {
+        $_SESSION['r33']=$_POST['r33'];
+    } elseif (isset($_POST['r34'])) {
+        $_SESSION['r34']=$_POST['r34'];
     }
     ?>
-
+ 
 <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Oui, j\'ai fait Top Chef Junior en Franche-Comté. </p> </div>';
+    if (isset($_SESSION['r32'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Aller regarder la lune au telescope </p> </div>';
     }
-    if (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> La place de la femme c\'est à la cuisine. </p> </div>';
+    if (isset($_SESSION['r33'])) {
+        echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> Parler de voiture </p> </div>';
     }
-    if (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p>  J\'ai déjà fait des pâtes. </p> </div>';
+    if (isset($_SESSION['r34'])) {
+        echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Regarder un live twitch sur le grand ecran? </p> </div>';
     }
     ?>
-
+ 
     <?php
-    if (isset($_SESSION['r17'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "ils cuisinent à deux." </p> </div>';
+    if (isset($_SESSION['r32'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Aller regarder la lune au telescope </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 8;
-    } elseif (isset($_SESSION['r18'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> elle se vexe et dégage le main caractère. </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
-    } elseif (isset($_SESSION['r19'])) {
-        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ca va, ca passe. </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 2;
+    } elseif (isset($_SESSION['r33'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Parler de voiture </p> </div>';
+        $_SESSION['score'] = $_SESSION['score'] + 8;
+    } elseif (isset($_SESSION['r34'])) {
+        echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Regarder un live twitch sur le grand ecran? </p> </div>';
+        $_SESSION['score'] = $_SESSION['score'] + 8;
     }
     ?>
 //FIN ICI//
