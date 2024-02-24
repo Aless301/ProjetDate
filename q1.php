@@ -5,12 +5,6 @@ include('includes/header.php');
 $_SESSION['score'] = 0;
 ?>
 
-<div class="divGauche">
-    <?php
-        include('includes/divGauche.php');
-    ?>
-</div>
-
 <div class="divDroite">
 
     <div class="bubbleQ">
@@ -899,6 +893,7 @@ if (isset($_SESSION['r37'])) {
         header("Location: includes/process.php");
     }
     ?>
+
     <p>Votre date est fini Voulez vous voir vos résultat ?</p>
     <form action="includes/process.php">
     <input class="bouton" type="submit" value="Oui">
@@ -906,6 +901,15 @@ if (isset($_SESSION['r37'])) {
     <form action="index.php">
     <input class="bouton" type="submit" value="Non">
     </form>
+
+</div>
+
+<div class="divGauche">
+    <?php
+        include('includes/divGauche.php');
+    ?>
+</div>
+
 <?php
 include('includes/footer.php');
 ?>
