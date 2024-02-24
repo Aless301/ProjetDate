@@ -4,6 +4,13 @@ include('includes/header.php');
 <?php
 $_SESSION['score'] = 0;
 ?>
+
+<div class="divGauche">
+    <?php
+        include('includes/divGauche.php');
+    ?>
+</div>
+
 <div class="divDroite">
 
     <div class="bubbleQ">
@@ -315,7 +322,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 2;
     }
     ?>
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu veux du vin avec ton repas ?</p></div>
     
     <div class="bubbleQ">
@@ -367,8 +374,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] - 10;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu veux faire quoi ?</p></div>
     
     <div class="bubbleQ">
@@ -411,7 +417,8 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_SESSION['r20'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "fin du date" </p> </div>';
-      //  $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        header("Location: includes/process.php");
     } elseif (isset($_SESSION['r21'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle s\'amuse bien et te propose d\'aller dans le jardin </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 2;
@@ -420,8 +427,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 8;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu penses que tu peux m'offrir cette robe?</p></div>
     
     <div class="bubbleQ">
@@ -467,14 +473,14 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 2;
     } elseif (isset($_SESSION['r24'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle se vexe et elle te dégage </p> </div>';
-    //    $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        header("Location: includes/process.php");
     } elseif (isset($_SESSION['r25'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle hesite d\'acheter une robe de marié </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 8;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Elle se fait aborder par un mec du bar</p></div>
     
     <div class="bubbleQ">
@@ -526,8 +532,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 5;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Merci pour la soirée!</p></div>
    
     <div class="bubbleQ">
@@ -579,8 +584,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] -99999;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu veux faire quoi?</p></div>
    
     <div class="bubbleQ">
@@ -634,8 +638,6 @@ $_SESSION['score'] = 0;
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Regarder un live twitch sur le grand ecran? </p> </div>';
 }
 ?>
-//FIN ICI//
-//COMMENCER ICI//
 
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Tu veux regarder qui?</p></div>
     
@@ -681,11 +683,11 @@ if (isset($_SESSION['r37'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Vous allez regarder Squeezie c\'est sympa mais Doigby est genant donc vous quittez." </p> </div>';
 } elseif (isset($_SESSION['r37'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Tu n\'as meme pas le temps de lancer le stream qu\'elle t\'as deja demandé de partir. </p> </div>';
-    //$_SESSION['score'] = $_SESSION['score'] - 999999;
+    $_SESSION['score'] = $_SESSION['score'] - 999999;
+    header("Location: includes/process.php");
 }
 ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Merci pour la soirée!</p></div>
    
     <div class="bubbleQ">
@@ -737,8 +739,7 @@ if (isset($_SESSION['r37'])) {
         $_SESSION['score'] = $_SESSION['score'] -99999;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Merci pour la soirée!</p></div>
    
     <div class="bubbleQ">
@@ -790,8 +791,7 @@ if (isset($_SESSION['r37'])) {
         $_SESSION['score'] = $_SESSION['score'] -99999;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Merci pour la soirée!</p></div>
    
     <div class="bubbleQ">
@@ -843,8 +843,7 @@ if (isset($_SESSION['r37'])) {
         $_SESSION['score'] = $_SESSION['score'] -99999;
     }
     ?>
-//FIN ICI//
-//COMMENCER ICI//
+
 <div class="bubbleG"><div class="arrow left-arrow"></div><p>Merci pour la soirée!</p></div>
    
     <div class="bubbleQ">
@@ -896,4 +895,6 @@ if (isset($_SESSION['r37'])) {
         $_SESSION['score'] = $_SESSION['score'] -99999;
     }
     ?>
-//FIN ICI//
+<?php
+include('includes/footer.php');
+?>
