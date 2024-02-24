@@ -583,13 +583,13 @@ $_SESSION['score'] = 0;
    
     <div class="bubbleQ">
     <form action="q1.php" method="post">
-            <input type="radio" id="r32" name="r17" value="32">
+            <input type="radio" id="r32" name="r32" value="32">
             <label for="reponse1"><p>Aller regarder la lune au telescope</p></label><br>
  
-            <input type="radio" id="r33" name="r18" value="33">
+            <input type="radio" id="r33" name="r33" value="33">
             <label for="reponse2"><p>Parler de voiture</p></label><br>
  
-            <input type="radio" id="r34" name="r19" value="34">
+            <input type="radio" id="r34" name="r34" value="34">
             <label for="reponse3"><p>Regarder un live twitch sur le grand ecran?</p></label><br>
  
             <input class="bouton" type="submit" value="↪">

@@ -6,7 +6,7 @@ include('includes/header.php');
 
                 if ($_SESSION["score"] > 100) {
                     echo '<h1>C\'est Gagné !</h1>';
-                    echo '<p>CHAMPIOOON'. $SCORE_SESSION["score"].'</p>';
+                    echo '<p>CHAMPIOOON </br> Ton score est de '. $_SESSION["score"].' Bien joué !</p>';
                     echo '<img class="meme" src="https://www.gif-maniac.com/gifs/53/53118.gif" alt="Trop Cooool!">';
                     echo '<audio src="https://youtu.be/48QA4s2FRE8"></audio>';
                     
@@ -24,7 +24,7 @@ include('includes/header.php');
     ?>
     <h1>Hall of Fame</h1>
     <p>Souhaitez vous sauvegarder votre score ? </br> Il est de : <?php echo $_SESSION['score'] ?></p>
-    <form class="bouton" action="process.php" method="post">
+    <form class="bouton" action="includes/process.php" method="post">
         <input type="submit" value="Ajouter votre score au Hall of Fame">
     </form>
 
