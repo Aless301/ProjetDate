@@ -209,7 +209,7 @@ $_SESSION['score'] = 0;
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Okok, sympa. </p> </div>';
     } elseif (isset($_SESSION['r12'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Lydia met de la musique jazzy et va manger."</p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 2;
+        $_SESSION['score'] = $_SESSION['score'] + 10;
     }
     ?>
 
@@ -255,13 +255,13 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_SESSION['r10'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Trop sytlé ! </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 4;
+        $_SESSION['score'] = $_SESSION['score'] + 10;
     } elseif (isset($_SESSION['r11'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Un peu nul le streetwear.. </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 3;
     } elseif (isset($_SESSION['r12'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> C\'est cool !</p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 1;
+        $_SESSION['score'] = $_SESSION['score'] + 5;
     }
     ?>
 
@@ -307,7 +307,7 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_SESSION['r14'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "ils cuisinent à deux." </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 8;
+        $_SESSION['score'] = $_SESSION['score'] + 10;
     } elseif (isset($_SESSION['r15'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> elle se vexe et dégage le main caractère. </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 9999999999;
@@ -365,7 +365,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] - 5;
     } elseif (isset($_SESSION['r19'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Tu sers trois verres et elle pense que t\'est un alcolo." </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] - 10;
+        $_SESSION['score'] = $_SESSION['score'] - 5;
     }
     ?>
 
@@ -418,7 +418,7 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 2;
     } elseif (isset($_SESSION['r22'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> action : slow, elle est ravie et te propose de sortir en ville en voiture </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 8;
+        $_SESSION['score'] = $_SESSION['score'] + 10;
     }
     ?>
 
@@ -471,7 +471,7 @@ $_SESSION['score'] = 0;
         header("Location: includes/process.php");
     } elseif (isset($_SESSION['r25'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle hesite d\'acheter une robe de marié </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 8;
+        $_SESSION['score'] = $_SESSION['score'] + 10;
     }
     ?>
 
@@ -517,7 +517,7 @@ $_SESSION['score'] = 0;
     <?php
     if (isset($_SESSION['r26'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Vous commencez a vous battre et tu gagnes miraculesement" </p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] + 10;
+        $_SESSION['score'] = $_SESSION['score'] + 15;
     } elseif (isset($_SESSION['r27'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Elle aime bien le gars, il s\'appelle Batiste, un homme tres riche et beau, ils finissent a deux et eurent beaucoup d\'enfant </p> </div>';
         //$_SESSION['score'] = $_SESSION['score'] - 9999999999;
@@ -572,10 +572,10 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] - 4;
     } elseif (isset($_SESSION['r30'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle te fais un bisous </p> </div>';
-       $_SESSION['score'] = $_SESSION['score'] + 4;
+       $_SESSION['score'] = $_SESSION['score'] + 10;
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
-        $_SESSION['score'] = $_SESSION['score'] -99999;
+        $_SESSION['score'] = $_SESSION['score'] - 99999;
     }
     ?>
 
@@ -630,6 +630,7 @@ $_SESSION['score'] = 0;
 } 
     elseif (isset($_SESSION['r34'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Regarder un live twitch sur le grand ecran? </p> </div>';
+    $_SESSION['score'] = $_SESSION['score'] + 8;
 }
 ?>
 
@@ -672,9 +673,10 @@ if (isset($_SESSION['r37'])) {
 <?php
  if (isset($_SESSION['r35'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Vous allez regardez Talmo c\'est une grande fane, elle est super contente." </p> </div>';
-    $_SESSION['score'] = $_SESSION['score'] + 8;
+    $_SESSION['score'] = $_SESSION['score'] + 10;
 } elseif (isset($_SESSION['r36'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Vous allez regarder Squeezie c\'est sympa mais Doigby est genant donc vous quittez." </p> </div>';
+    $_SESSION['score'] = $_SESSION['score'] + 0;
 } elseif (isset($_SESSION['r37'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Tu n\'as meme pas le temps de lancer le stream qu\'elle t\'as deja demandé de partir. </p> </div>';
     $_SESSION['score'] = $_SESSION['score'] - 999999;
