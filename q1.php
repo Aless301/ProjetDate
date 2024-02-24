@@ -737,6 +737,7 @@ if (isset($_SESSION['r37'])) {
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
         $_SESSION['score'] = $_SESSION['score'] -99999;
+        header("Location: includes/process.php");
     }
     ?>
 
@@ -789,6 +790,7 @@ if (isset($_SESSION['r37'])) {
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
         $_SESSION['score'] = $_SESSION['score'] -99999;
+        header("Location: includes/process.php");
     }
     ?>
 
@@ -841,6 +843,7 @@ if (isset($_SESSION['r37'])) {
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
         $_SESSION['score'] = $_SESSION['score'] -99999;
+        header("Location: includes/process.php");
     }
     ?>
 
@@ -893,8 +896,16 @@ if (isset($_SESSION['r37'])) {
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
         $_SESSION['score'] = $_SESSION['score'] -99999;
+        header("Location: includes/process.php");
     }
     ?>
+    <p>Votre date est fini Voulez vous voir vos résultat ?</p>
+    <form action="includes/process.php">
+    <input class="bouton" type="submit" value="Oui">
+    </form>
+    <form action="index.php">
+    <input class="bouton" type="submit" value="Non">
+    </form>
 <?php
 include('includes/footer.php');
 ?>
