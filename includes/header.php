@@ -21,20 +21,17 @@ session_start();
 </nav>
 
 <script>
-        // Fonction pour enregistrer la position de défilement
-        function saveScrollPosition() {
-            localStorage.setItem('scrollPosition', window.scrollY);
-        }
+    function saveScrollPosition() {
+        localStorage.setItem('scrollPosition', window.scrollY);
+    }
 
-        // Fonction pour restaurer la position de défilement
-        function restoreScrollPosition() {
-            var scrollPosition = localStorage.getItem('scrollPosition');
-            if (scrollPosition !== null) {
-                window.scrollTo(0, parseInt(scrollPosition));
-            }
+    function restoreScrollPosition() {
+        var scrollPosition = localStorage.getItem('scrollPosition');
+        if (scrollPosition !== null) {
+            window.scrollTo(0, parseInt(scrollPosition));
         }
+    }
 
-        // Attacher des gestionnaires d'événements pour enregistrer et restaurer la position de défilement
-        window.addEventListener('beforeunload', saveScrollPosition);
-        window.addEventListener('load', restoreScrollPosition);
-    </script>
+    window.addEventListener('beforeunload', saveScrollPosition);
+    window.addEventListener('load', restoreScrollPosition);
+</script>

@@ -133,7 +133,7 @@ video {
   background-color: #f76868;
   width: 25%;
   float: left;
-  height: 620px;
+  height: 100%;
   position: fixed;
   top: 46px;
 }

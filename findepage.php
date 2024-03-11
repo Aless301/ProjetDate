@@ -24,16 +24,32 @@ include('includes/header.php');
                 }
     ?>
     <h1>Hall of Fame</h1>
-    <p>Souhaitez vous sauvegarder votre score ? </br> Il est de : <?php echo $_SESSION['score'] ?></p>
-    <form class="bouton" action="includes/process.php" method="post">
-        <input type="submit" value="Ajouter votre score au Hall of Fame">
-    </form>
+<?php
+$name = $_SESSION['pseudo'];
+$score = $_SESSION['score'];
 
-    <?php
-    // Affiche le contenu du fichier texte
-    $hallOfFameContent = file_get_contents("hall_of_fame.txt");
-    echo '<p>'.nl2br($hallOfFameContent).'</p>';
-    ?>
+$file = fopen("score.txt", "a");
+
+fwrite($file, "$name;$score\n");
+
+fclose($file);
+
+$scores = file("score.txt", FILE_IGNORE_NEW_LINES);
+
+function compare($a, $b) {
+  return explode(";", $b)[1] - explode(";", $a)[1];
+}
+
+usort($scores, "compare");
+
+for ($i = 0; $i < 5; $i++) {
+  if (isset($scores[$i])) {
+    list($name, $score) = explode(";", $scores[$i]);
+    echo "<p>$name : $score</p>";
+  }
+}
+echo "</ol>";
+?>
 </div>
 <?php
 include('includes/footer.php');

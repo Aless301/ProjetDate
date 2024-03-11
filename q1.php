@@ -635,7 +635,7 @@ $_SESSION['score'] = 0;
 ?>
 
     <p>Votre date est fini Voulez vous voir vos résultat ?</p>
-    <form action="includes/process.php">
+    <form action="findepage.php">
     <input class="bouton" type="submit" value="Oui">
     </form>
     <form action="index.php">

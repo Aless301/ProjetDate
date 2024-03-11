@@ -1,3 +1,4 @@
+<div class="divLogin">
 <?php
 include('includes/header.php');
 ?>
@@ -12,3 +13,4 @@ $_SESSION['score'] = 0;
 <?php
 include('includes/footer.php');
 ?>
+</div>
