@@ -1,36 +1,43 @@
 /*Menu Principale*/
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: Avatgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
+
 nav ul {
   list-style: none;
 }
+
 nav li {
   float: left;
   width: 25%;
   text-align: center;
 }
+
 nav ul::after {
   content: "";
   display: table;
   clear: both;
 }
+
 nav {
   width: 100%;
   margin: 0 auto;
   background-color: #800909;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
 }
+
 nav a {
   display: block;
   text-decoration: none;
   color: #9966cc;
   border-bottom: 2px solid transparent;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
+
 nav a:hover {
   color: #a7fff3;
   border-bottom: 2px solid #800909;
@@ -126,7 +133,9 @@ video {
   background-color: #f76868;
   width: 25%;
   float: left;
-  height: 7500px;
+  height: 620px;
+  position: fixed;
+  top: 46px;
 }
 
 .divDroite {
@@ -134,6 +143,11 @@ video {
   color: white;
   float: right;
   width: 75%;
+  margin-top: 60px;
+}
+
+.divLogin {
+  margin-top: 60px;
 }
 
 /*Bulle de texte*/
