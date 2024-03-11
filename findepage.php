@@ -1,6 +1,7 @@
 <?php
 include('includes/header.php');
 ?>
+<div class="divLogin">
     <?php
     
 
@@ -33,6 +34,7 @@ include('includes/header.php');
     $hallOfFameContent = file_get_contents("hall_of_fame.txt");
     echo '<p>'.nl2br($hallOfFameContent).'</p>';
     ?>
+</div>
 <?php
 include('includes/footer.php');
 ?>
