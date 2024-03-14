@@ -11,15 +11,15 @@ include('includes/header.php');
                     echo '<img class="meme" src="https://www.gif-maniac.com/gifs/53/53118.gif" alt="Trop Cooool!">';
                     echo '<audio src="https://youtu.be/48QA4s2FRE8"></audio>';
                     
-                } elseif ($_SESSION["score"] < 100 && $_SESSION["score"] || 0 ) {
+                } elseif ($_SESSION["score"] < 100 && $_SESSION["score"] > 0 ) {
                     echo '<h1>C\'est pas Gagné, mais c\'est pas Perdu !</h1>';
                     echo '<p>This is the friendzone</p>';
                     echo '<img class="meme" src="https://usagif.com/wp-content/uploads/gif/crying-96.gif" alt="Triste">';
 
 
-                } else {
+                } elseif ($_SESSION['score'] < 0) {
                     echo '<h1>C\'est Perdu</h1>';
-                    echo '<p>Elle vous a bloquer et a porté plainte contre vous la police, </br> Votre famille vous rejette, </br> Vous avez déshérité et vous finissez en prison.</p>';
+                    echo '<p>Elle vous a bloqué et a porté plainte contre vous à la police, </br> Votre famille vous rejette, </br> Vous avez déshérité et vous finissez en prison.</p>';
                     echo '<img class="meme" src="https://media1.tenor.com/m/72NJfF7QTl4AAAAC/working-get-to-work.gif" alt="Prison">';
                 }
     ?>

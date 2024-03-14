@@ -55,7 +55,7 @@ $_SESSION['score'] = 0;
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Salut monsieur, aussi beau que sur ta photo. </p> </div>';
     } if(isset($_SESSION['r3'])) {
         $_SESSION['score'] = $_SESSION['score'] - 9999999999999;
-        header("Location: includes/process.php");
+        header("Location: findepage.php");
         exit;
     }
     ?>
@@ -311,6 +311,7 @@ $_SESSION['score'] = 0;
     } elseif (isset($_SESSION['r15'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> elle se vexe et dégage le main caractère. </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        header("Location: findepage.php");
     } elseif (isset($_SESSION['r16'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Ca va, ca passe. </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 2;
@@ -412,7 +413,7 @@ $_SESSION['score'] = 0;
     if (isset($_SESSION['r20'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "fin du date" </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 9999999999;
-        header("Location: includes/process.php");
+        header("Location: findepage.php");
     } elseif (isset($_SESSION['r21'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle s\'amuse bien et te propose d\'aller dans le jardin </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 2;
@@ -468,7 +469,7 @@ $_SESSION['score'] = 0;
     } elseif (isset($_SESSION['r24'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle se vexe et elle te dégage </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 9999999999;
-        header("Location: includes/process.php");
+        header("Location: findepage.php");
     } elseif (isset($_SESSION['r25'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle hesite d\'acheter une robe de marié </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 10;
@@ -520,7 +521,8 @@ $_SESSION['score'] = 0;
         $_SESSION['score'] = $_SESSION['score'] + 15;
     } elseif (isset($_SESSION['r27'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Elle aime bien le gars, il s\'appelle Batiste, un homme tres riche et beau, ils finissent a deux et eurent beaucoup d\'enfant </p> </div>';
-        //$_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        $_SESSION['score'] = $_SESSION['score'] - 9999999999;
+        header("Location: findepage.php");
     } elseif (isset($_SESSION['r28'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Action : "Il prend peur et commence a fuir a la vue de Théo." </p> </div>';
         $_SESSION['score'] = $_SESSION['score'] + 5;
@@ -576,6 +578,7 @@ $_SESSION['score'] = 0;
     } elseif (isset($_SESSION['r31'])) {
         echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Elle est décédé dans la chute</p> </div>';
         $_SESSION['score'] = $_SESSION['score'] - 99999;
+        header("Location: findepage.php");
     }
     ?>
 
