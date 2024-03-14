@@ -3,3 +3,6 @@ OriginalAD;108
 Ora301;85
 Ora301;54
 Poireau;108
+Ora301;15
+LordPinky;108
+Ora301;5

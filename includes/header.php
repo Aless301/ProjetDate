@@ -8,11 +8,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Date</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <link class="logo" rel="icon" type="image/x-icon" href="../images/logo.png">
 </head>
 <body>
 <nav>
-    <img style="float: right;" src="../logo.png" alt="">
     <ul>
         <li><a href="../index.php">Index</a></li>
         <li><a href="session_crash.php">.</a></li>

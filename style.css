@@ -24,7 +24,7 @@ nav ul::after {
 nav {
   width: 100%;
   margin: 0 auto;
-  background-color: #800909;
+  background-color: #c8ccbb;
   position: fixed;
   top: 0;
   z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
@@ -33,20 +33,20 @@ nav {
 nav a {
   display: block;
   text-decoration: none;
-  color: #9966cc;
+  color: #373344;
   border-bottom: 2px solid transparent;
   padding: 10px 0;
 }
 
 nav a:hover {
-  color: #a7fff3;
-  border-bottom: 2px solid #800909;
+  color: #5522f9;
+  border-bottom: 2px solid #000000;
 }
 
 /*Début de CSS Classique*/
 
 html {
-  background-color: #c01313;
+  background-color: #373344;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 
 /* Section */
 footer {
-  border-top: 3px unset #aa1010;
+  border-top: 3px unset #373344;
   font-size: small;
   text-align: right;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +65,7 @@ footer {
 
 /* Titres */
 h1 {
-  color: #03071e;
+  color: #c8ccbb;
   text-decoration: none;
   text-align: center;
   clear: right;
@@ -75,7 +75,7 @@ h1 {
   padding: 5px;
 }
 h2 {
-  color: #03071e;
+  color: #c8ccbb;
   text-decoration: none;
   text-align: center;
   clear: right;
@@ -89,6 +89,7 @@ h2 {
 p {
   margin: 10px;
   font-size: larger;
+  color: #c8ccbb;
 }
 
 hr {
@@ -130,7 +131,7 @@ video {
 
 /*Div*/
 .divGauche {
-  background-color: #f76868;
+  background-color: #808080;
   width: 25%;
   float: left;
   height: 100%;
@@ -139,7 +140,7 @@ video {
 }
 
 .divDroite {
-  background-color: #c01313;
+  background-color: #373344;
   color: white;
   float: right;
   width: 75%;
@@ -173,7 +174,7 @@ video {
   padding: 10px;
   margin: 15px 10px 15px 10px;
   border-radius: 10px;
-  background-color: rgb(181, 212, 0);
+  background-color: rgb(8, 0, 56);
   position: relative;
 }
 
