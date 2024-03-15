@@ -1,5 +1,5 @@
 <?php
-    echo '<p>Votre Score : '.$_SESSION['score'].'</p>';
+echo '<p>Votre Score : ' . $_SESSION['score'] . '</p>';
 ?>
 
 <div class="progress-bar">
@@ -30,6 +30,5 @@
 </script>
 
 <?php
-    echo '<p>'.$_SESSION['pseudo'].'</p>'
+echo '<p>' . $_SESSION['pseudo'] . '</p>'
 ?>
-
