@@ -15,13 +15,13 @@ $_SESSION['score'] = 0;
         <form action="q1.php" method="post">
             <legend><p>Que veut tu lui dire pour commencer la conversation ?</p></legend>
             <input type="radio" id="r1" name="r1" value="1">
-            <label for="reponse1"><p>Holà misstinguette, comment tu vas ?</p></label><br>
+            <label for="reponse1"><p>"Holà misstinguette, comment tu vas ?" ?</p></label><br>
 
             <input type="radio" id="r2" name="r2" value="2">
-            <label for="reponse2"><p>Salut ça va ?</p></label><br>
+            <label for="reponse2"><p>"Salut ça va ?" ?</p></label><br>
 
             <input type="radio" id="r3" name="r3" value="3">
-            <label for="reponse3"><p>Ah ouais t'es moins belle que sur ta photo ?</p></label><br>
+            <label for="reponse3"><p>"Ah ouais t'es moins belle que sur ta photo ?" ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -67,13 +67,13 @@ $_SESSION['score'] = 0;
     <form action="q1.php" method="post">
         <legend><p>Que veut tu lui repondre ?</p></legend>
             <input type="radio" id="r4" name="r4" value="4">
-            <label for="reponse1"><p>Oui ?</p></label><br>
+            <label for="reponse1"><p>"Oui " ?</p></label><br>
 
             <input type="radio" id="r5" name="r5" value="5">
-            <label for="reponse2"><p>Si tu me le permets ?</p></label><br>
+            <label for="reponse2"><p>"Si tu me le permets" ?</p></label><br>
 
             <input type="radio" id="r6" name="r6" value="6">
-            <label for="reponse3"><p>Non merci, ça va aller ?</p></label><br>
+            <label for="reponse3"><p>"Non merci, ça va aller" ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -118,13 +118,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r7" name="r7" value="7">
-            <label for="reponse1"><p>Non, j'ai couper les liens ?</p></label><br>
+            <label for="reponse1"><p>"Non, j'ai couper les liens" ?</p></label><br>
 
             <input type="radio" id="r8" name="r8" value="8">
-            <label for="reponse2"><p>Oui et non, car on ne se voit pas trop ?</p></label><br>
+            <label for="reponse2"><p>"Oui et non, car on ne se voit pas trop" ?</p></label><br>
 
             <input type="radio" id="r9" name="r9" value="9">
-            <label for="reponse3"><p>Oui je suis très proche et au petit soin ?</p></label><br>
+            <label for="reponse3"><p>"Oui je suis très proche et au petit soin" ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -169,13 +169,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r10" name="r10" value="10">
-            <label for="reponse1"><p>J'aime le rock country et le rap indien.</p></label><br>
+            <label for="reponse1"><p>"J'aime le rock country et le rap indien." ?</p></label><br>
 
             <input type="radio" id="r11" name="r11" value="11">
-            <label for="reponse2"><p>J'aime les musiques de soirées.</p></label><br>
+            <label for="reponse2"><p>"J'aime les musiques de soirées." ?</p></label><br>
 
             <input type="radio" id="r12" name="r12" value="12">
-            <label for="reponse3"><p>Oui, j'aime le jazz.</p></label><br>
+            <label for="reponse3"><p>"Oui, j'aime le jazz." ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -220,13 +220,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r32" name="r32" value="32">
-            <label for="reponse1"><p>Je m'habille en old money.</p></label><br>
+            <label for="reponse1"><p>"Je m'habille en old money." ?</p></label><br>
 
             <input type="radio" id="r33" name="r33" value="33">
-            <label for="reponse2"><p>Je suis fashion week du streetwear.</p></label><br>
+            <label for="reponse2"><p>"Je suis fashion week du streetwear." ?</p></label><br>
 
             <input type="radio" id="r34" name="r34" value="34">
-            <label for="reponse3"><p>Je m'habille gothique.</p></label><br>
+            <label for="reponse3"><p>"Je m'habille gothique." ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -272,13 +272,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r14" name="r14" value="14">
-            <label for="reponse1"><p>Oui, j'ai fait Top Chef Junior en Franche-Comté.</p></label><br>
+            <label for="reponse1"><p>"Oui, j'ai fait Top Chef Junior en Franche-Comté." ?</p></label><br>
 
             <input type="radio" id="r15" name="r15" value="15">
-            <label for="reponse2"><p>La place de la femme c'est à la cuisine.</p></label><br>
+            <label for="reponse2"><p>"La place de la femme c'est à la cuisine." ?</p></label><br>
 
             <input type="radio" id="r16" name="r16" value="16">
-            <label for="reponse3"><p>J'ai déjà fait des pâtes.</p></label><br>
+            <label for="reponse3"><p>"J'ai déjà fait des pâtes." ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -325,13 +325,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r17" name="r17" value="17">
-            <label for="reponse1"><p>Un verre.</p></label><br>
+            <label for="reponse1"><p>"Un verre." ?</p></label><br>
 
             <input type="radio" id="r18" name="r18" value="18">
-            <label for="reponse2"><p>Deux verres.</p></label><br>
+            <label for="reponse2"><p>"Deux verres." ?</p></label><br>
 
             <input type="radio" id="r19" name="r19" value="19">
-            <label for="reponse3"><p>Trois verres.</p></label><br>
+            <label for="reponse3"><p>"Trois verres." ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -377,13 +377,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r20" name="r20" value="20">
-            <label for="reponse1"><p>Action : regarder un film, tu t'endors sur le côté du canapé et elle se vexe.</p></label><br>
+            <label for="reponse1"><p>ACTION : regarder un film, tu t'endors sur le côté du canapé et elle se vexe.</p></label><br>
 
             <input type="radio" id="r21" name="r21" value="21">
-            <label for="reponse2"><p>Action : chifoumi.</p></label><br>
+            <label for="reponse2"><p>ACTION : chifoumi.</p></label><br>
 
             <input type="radio" id="r22" name="r22" value="22">
-            <label for="reponse3"><p>Action : faire un slow avec la musique seulement.</p></label><br>
+            <label for="reponse3"><p>ACTION : faire un slow avec la musique seulement.</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -430,13 +430,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r23" name="r23" value="23">
-            <label for="reponse1"><p>Oui, c'est 399€ seulement, aucun problème.</p></label><br>
+            <label for="reponse1"><p>"Oui, c'est 399€ seulement, aucun problème." ?</p></label><br>
 
             <input type="radio" id="r24" name="r24" value="24">
-            <label for="reponse2"><p>Non, j'économise pour acheter des Nitros à des e-girls sur Discord, désolé.</p></label><br>
+            <label for="reponse2"><p>"Non, j'économise pour acheter des Nitros à des e-girls sur Discord, désolé." ?</p></label><br>
 
             <input type="radio" id="r25" name="r25" value="25">
-            <label for="reponse3"><p>J'aurais pu, mais la robe est loin d'être suffisamment belle pour toi.</p></label><br>
+            <label for="reponse3"><p>"J'aurais pu, mais la robe est loin d'être suffisamment belle pour toi." ?</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -483,13 +483,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r26" name="r26" value="26">
-            <label for="reponse1"><p>Tu commences a te battre avec le gars.</p></label><br>
+            <label for="reponse1"><p>ACTION : lancer un duel de Hip-Hop avec le gars.</p></label><br>
 
             <input type="radio" id="r27" name="r27" value="27">
-            <label for="reponse2"><p>Tu le laisses draguer Lydia.</p></label><br>
+            <label for="reponse2"><p>ACTION : le laisser draguer Lydia.</p></label><br>
 
             <input type="radio" id="r28" name="r28" value="28">
-            <label for="reponse3"><p>Tu lui montres une photo de Théo Massin.</p></label><br>
+            <label for="reponse3"><p>ACTION: lui montrer une photo de Théo Massin.</p></label><br>
 
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -536,13 +536,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r29" name="r29" value="29">
-            <label for="reponse1"><p>"ACTION : lui dire que c'etait chiant ?" </p></label><br>
+            <label for="reponse1"><p>ACTION : lui dire que c'etait chiant </p></label><br>
  
             <input type="radio" id="r30" name="r30" value="30">
-            <label for="reponse2"><p>"ACTION : Tout petit bisou sur la joue ?"</p></label><br>
+            <label for="reponse2"><p>ACTION : lui faire un bisou sur la joue</p></label><br>
  
             <input type="radio" id="r31" name="r31" value="31">
-            <label for="reponse3"><p>"ACTION : La pousser de la colline ?"</p></label><br>
+            <label for="reponse3"><p>ACTION : La pousser dans les ortilles</p></label><br>
  
             <input class="bouton" type="submit" value="↪">
         </form>
@@ -589,13 +589,13 @@ $_SESSION['score'] = 0;
     <div class="bubbleQ">
     <form action="q1.php" method="post">
             <input type="radio" id="r38" name="r38" value="38">
-            <label for="reponse1"><p>Aller regarder la lune au telescope ?</p></label><br>
+            <label for="reponse1"><p>ACTION : aller regarder la lune au telescope</p></label><br>
  
             <input type="radio" id="r39" name="r39" value="39">
-            <label for="reponse2"><p>Parler de voiture ?</p></label><br>
+            <label for="reponse2"><p>ACTION : parler du rayon de braquage des Renault Kangoo</p></label><br>
  
             <input type="radio" id="r40" name="r40" value="40">
-            <label for="reponse3"><p>Regarder un live twitch sur le grand ecran ?</p></label><br>
+            <label for="reponse3"><p>ACTION : regarder un live twitch sur une Appelwatch</p></label><br>
  
             <input class="bouton" type="submit" value="↪">
         </form>
