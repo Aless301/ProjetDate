@@ -5,7 +5,20 @@ include('includes/header.php');
 $_SESSION['score'] = 0;
 ?>
 
+<script>
+  function toggleDiv() {
+    var div = document.getElementById("myDiv");
+    if (div.style.display === "none") {
+      div.style.display = "block"; // Pour l'afficher
+    } else {
+      div.style.display = "none"; // Pour le masquer
+    }
+  }
+</script>
+
 <div class="divDroite">
+
+<button onclick="toggleDiv()"><img src="images/oeil.png" alt="image d'oeil pour afficher ou non la partie de gauche"></button>
 
     <div class="bubbleQ">
         <p>Tu viens d'arriver devant sa porte.</p>
@@ -649,7 +662,7 @@ $_SESSION['score'] = 0;
 
 </div>
 
-<div class="divGauche">
+<div id="myDiv" class="divGauche">
     <?php
         include('includes/divGauche.php');
     ?>
