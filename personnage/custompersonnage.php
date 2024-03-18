@@ -25,10 +25,7 @@ include('../includes/header.php');
     </select><br><br>
 
     <input type="submit" name="submit" value="Créer Personnage">
-</form>
-<form method="post" action="custompersonnage.php">
-    <input type="submit" name="retour" value="Retour">
-</form>
+    </form>
 <?php
 include('../includes/footer.php');
 ?>

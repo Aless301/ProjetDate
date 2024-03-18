@@ -16,6 +16,12 @@ include('../includes/header.php');
     }
     ?>
 
+<form method="post" action="custompersonnage.php">
+    <input type="submit" name="perso" value="moche">
+</form>
+<form method="post" action="../q1.php">
+    <input type="submit" name="jeu" value="vers le jeu">
+</form>
     <?php
     include('../includes/footer.php');
     ?>
