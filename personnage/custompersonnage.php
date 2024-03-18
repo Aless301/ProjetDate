@@ -12,14 +12,14 @@ include('../includes/header.php');
 
     <label for="corps">Choisissez un corps :</label>
     <select name="corps" id="corps">
-        <option value="corps1"> <img src="../images/tete1.jpg" alt="Corps 1"> </option>
+        <option value="corps1"> <img src="../images/" alt="Corps 1"> </option>
         <option value="corps2"> <img src="../chemin/vers/corps2.jpg" alt="Corps 2"> </option>
         <option value="corps3"> <img src="../chemin/vers/corps3.jpg" alt="Corps 3"> </option>
     </select><br><br>
 
     <label for="jambes">Choisissez des jambes :</label>
     <select name="jambes" id="jambes">
-        <option value="jambes1"> <img src="../images/tete1.jpg" alt="Jambes 1"> </option>
+        <option value="jambes1"> <img src="../images/" alt="Jambes 1"> </option>
         <option value="jambes2"> <img src="../chemin/vers/jambes2.jpg" alt="Jambes 2"> </option>
         <option value="jambes3"> <img src="../chemin/vers/jambes3.jpg" alt="Jambes 3"> </option>
     </select><br><br>
