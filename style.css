@@ -142,6 +142,9 @@ video {
 
 .divLogin {
   margin-top: 60px;
+  text-align: center;
+  width: 200%;
+  height: 200%;
 }
 
 /*Bulle de texte*/
