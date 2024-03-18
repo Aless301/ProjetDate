@@ -751,8 +751,8 @@ if (isset($_SESSION['r38'])) {
 }
 ?>
 
-<p>Votre date est fini Voulez vous voir vos résultat ?</p>
-<form action="findepage.php">
+<p style="clear: both;">Votre date est fini Voulez vous voir vos résultat ?</p>
+<form style="clear: both;" action="findepage.php">
     <input class="bouton" type="submit" value="Oui">
 </form>
 <form action="index.php">
