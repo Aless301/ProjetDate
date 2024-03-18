@@ -5,7 +5,7 @@ include('../includes/header.php');
 <form method="post" action="resultat_personnage.php">
         <label for="tete">Choisissez une tête :</label>
         <select name="tete" id="tete">
-            <option value="tete1"> <img src="chemin/vers/tete1.jpg" alt="Tête 1"> </option>
+            <option value="tete1"> <img src="images/tete1.png" alt="Tête 1"> </option>
             <option value="tete2"> <img src="chemin/vers/tete2.jpg" alt="Tête 2"> </option>
             <option value="tete3"> <img src="chemin/vers/tete3.jpg" alt="Tête 3"> </option>
         </select><br><br>
