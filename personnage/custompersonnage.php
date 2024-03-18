@@ -26,7 +26,9 @@ include('../includes/header.php');
 
     <input type="submit" name="submit" value="Créer Personnage">
 </form>
-
+<form method="post" action="custompersonnage.php">
+    <input type="submit" name="retour" value="Retour">
+</form>
 <?php
 include('../includes/footer.php');
 ?>
