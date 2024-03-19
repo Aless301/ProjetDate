@@ -5,14 +5,13 @@ include('../includes/header.php');
 <body>
     <h2>Résultat de la création du personnage</h2>
     <?php
-    if (isset($_POST['submit'])) {
-        $tete = $_POST['tete'];
-        $corps = $_POST['corps'];
-        $jambes = $_POST['jambes'];
-
-        echo "<p>Tête choisie : $tete</p>";
-        echo "<p>Corps choisi : $corps</p>";
-        echo "<p>Jambes choisies : $jambes</p>";
+    if(isset($_POST['submit'])){
+        if(isset($_POST['image'])){
+            $image = $_POST['image'];
+            echo "<img src='$image' alt='Image choisie'>";
+        } else {
+            echo "Aucune image sélectionnée.";
+        }
     }
     ?>
 
