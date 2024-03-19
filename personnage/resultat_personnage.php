@@ -3,7 +3,7 @@ include('../includes/header.php');
 ?>
 
 <body>
-    <h2>Résultat de la Création de Personnage</h2>
+    <h2>Résultat de la création du personnage</h2>
     <?php
     if (isset($_POST['submit'])) {
         $tete = $_POST['tete'];

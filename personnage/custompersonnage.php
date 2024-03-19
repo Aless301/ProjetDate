@@ -1,11 +1,11 @@
 <?php
 include('../includes/header.php');
 ?>
-<h2>Création de Personnage</h2>
+<h2>Création du personnage</h2>
 <form method="post" action="resultat_personnage.php">
     <label for="tete">Choisissez une tête :</label>
     <select name="tete" id="tete">
-        <option value="tete1"> <img src="../images/tete1.jpg" alt="Tête 1"> </option>
+        <option value="tete1"> <img src="./images/tete1.jpg" alt="Tête 1"> </option>
         <option value="tete2"> <img src="../chemin/vers/tete2.jpg" alt="Tête 2"> </option>
         <option value="tete3"> <img src="../chemin/vers/tete3.jpg" alt="Tête 3"> </option>
     </select><br><br>
