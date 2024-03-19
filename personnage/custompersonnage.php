@@ -6,7 +6,6 @@ include('../includes/header.php');
         function afficherImage(image) {
             document.getElementById("image_affichee").src = image;
         }
-        // Appel initial pour afficher l'image par défaut
         afficherImage('../images/tete1.jpg');
     </script>
     <h2>Choisissez une image :</h2>

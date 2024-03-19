@@ -8,14 +8,13 @@ echo '<p>Votre Score : ' . $_SESSION['score'] . '</p>';
 </div>
 
 <script>
-    // Simuler l'augmentation du score
     let currentScore = 0;
     const targetScore = 100;
     const progressBar = document.getElementById('progressBar');
     const progressLabel = document.getElementById('progressLabel');
 
     function updateProgressBar() {
-        currentScore += 5; // Augmentation arbitraire du score
+        currentScore += 5; 
         const progressPercentage = (currentScore / targetScore) * <?php echo $_SESSION['score'] ?>;
         progressBar.style.width = `${progressPercentage}%`;
         progressLabel.innerText = `${progressPercentage.toFixed(0)}%`;
@@ -25,7 +24,7 @@ echo '<p>Votre Score : ' . $_SESSION['score'] . '</p>';
         }
     }
 
-    // Lancer la progression
+
     updateProgressBar();
 </script>
 
