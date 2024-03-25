@@ -53,7 +53,6 @@ body {
   font-family: Arial;
   text-align: justify;
   color: #03071e;
-  margin-top: 70px;
 }
 
 /* Section */
@@ -72,7 +71,7 @@ h1 {
   clear: right;
   border-radius: 50px;
   margin: 5px;
-  text-shadow: #06046a 2px 2px 0px;
+  text-shadow: #6a040f 2px 2px 0px;
   padding: 5px;
 }
 h2 {
@@ -97,7 +96,7 @@ hr {
   display: none;
 }
 
-.bouton {
+.bouton{
   margin: 10px;
 }
 
@@ -137,15 +136,45 @@ video {
   float: left;
   height: 100%;
   position: fixed;
-  top: 64px;
+  top: 46px;
+}
+
+.divDroite {
+  background-color: #373344;
+  color: white;
+  float: right;
+  width: 75%;
+  margin-top: 60px;
 }
 
 .divLogin {
-  margin-top: 60px;
+  margin-top: 2%;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  min-width: 50%;
+
 }
+
+.txtwelcome{
+  text-align: center;
+  margin-top: 15%;
+  font-size: 175%;
+  min-width: 50%;
+}
+
+/* Formulaires */
+input[type="text"] {
+  border: 1px black solid;
+  min-width: 20%;
+  height: 12.5%;
+  font-size: 175%; 
+}
+
+input[type="submit"] {
+  border: 1px black solid;
+  min-width: 10%; 
+  font-size: 125%; 
+}
+
 
 /*Bulle de texte*/
 .bubbleG {
@@ -155,8 +184,6 @@ video {
   border-radius: 10px;
   background-color: gray;
   position: relative;
-  float: left;
-  clear: both;
 }
 .bubbleD {
   max-width: 300px;
@@ -165,17 +192,15 @@ video {
   border-radius: 10px;
   background-color: blue;
   position: relative;
-  float: right;
-  clear: both;
+
 }
 .bubbleQ {
-  max-width: 35%;
+  max-width: 300px;
   padding: 10px;
   margin: 15px 10px 15px 10px;
   border-radius: 10px;
-  background-color: rgb(38, 33, 66);  
+  background-color: rgb(8, 0, 56);
   position: relative;
-  clear: both;
 }
 
 .arrow {
@@ -203,7 +228,7 @@ video {
 /*Écran de Chargement*/
 .loader {
   border: 16px solid #f3f3f3; /* Gris clair */
-  border-top: 16px solid #402d86; /* Bleu */
+  border-top: 16px solid #3498db; /* Bleu */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -233,6 +258,6 @@ video {
 .progress-bar-inner {
   width: 0;
   height: 30px;
-  background-color: #402d86;
+  background-color: #4CAF50;
   color: white;
 }
