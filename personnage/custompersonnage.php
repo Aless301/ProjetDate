@@ -9,12 +9,9 @@ include('../includes/header.php');
     function afficherCorps(image) {
         document.getElementById("corps_affichee").src = image;
     }
-    function afficherJambes(image) {
-        document.getElementById("jambes_affichee").src = image;
-    }
+  
     afficherTete('../images/tete1.jpg');
     afficherCorps('../images/corps1.jpg');
-    afficherJambes('../images/jambes1.jpg');
 </script>
 
 <h2>Créez votre personnage :</h2>
@@ -43,23 +40,10 @@ include('../includes/header.php');
         <label for="corps3"><img src="../images/corps3.jpg" alt="Corps 3"></label>
     </div>
 
-    <div>
-        <h3>Choisissez des jambes :</h3>
-        <input type="radio" id="jambes1" name="jambes" value="jambes1" onclick="afficherJambes('../images/jambes1.jpg')" checked>
-        <label for="jambes1"><img src="../images/jambes1.jpg" alt="Jambes 1"></label>
-
-        <input type="radio" id="jambes2" name="jambes" value="jambes2" onclick="afficherJambes('../images/jambes2.jpg')">
-        <label for="jambes2"><img src="../images/jambes2.jpg" alt="Jambes 2"></label>
-
-        <input type="radio" id="jambes3" name="jambes" value="jambes3" onclick="afficherJambes('../images/jambes3.jpg')">
-        <label for="jambes3"><img src="../images/jambes3.jpg" alt="Jambes 3"></label>
-    </div>
-
     <h3>Aperçu :</h3>
     <img id="tete_affichee" src="" alt="Aperçu de la tête"><br>
     <img id="corps_affichee" src="" alt="Aperçu du corps"><br>
-    <img id="jambes_affichee" src="" alt="Aperçu des jambes"><br><br>
-
+    
     <input type="submit" name="submit" value="Valider la création">
 </form>
 

@@ -20,12 +20,6 @@ include('../includes/header.php');
             echo "<img src='../images/{$corps}.jpg' alt='Corps choisi' style='width:100px;'><br>";
         }
 
-     
-        if(isset($_POST['jambes'])){
-            $jambes = $_POST['jambes'];
-            echo "<h3>Jambes choisies :</h3>";
-            echo "<img src='../images/{$jambes}.jpg' alt='Jambes choisies' style='width:100px;'><br>";
-        }
     } else {
         echo "Aucune sélection n'a été faite.";
     }
