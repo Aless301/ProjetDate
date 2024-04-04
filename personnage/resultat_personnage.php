@@ -1,11 +1,10 @@
 <?php
-if(isset($_POST['submit'])){
-    if(isset($_POST['tete'])){
-        $_SESSION['tete'] = $_POST['tete'];
-    }
-    if(isset($_POST['corps'])){
-        $_SESSION['corps'] = $_POST['corps'];
-    }
+if(isset($_POST['tete'])){
+    $tete = $_POST['tete'];
+    echo "<h3>Tête choisie :</h3>";
+    echo "<img src='../images/{$tete}.jpg' alt='Tête choisie' style='width:100px;'><br>";
+}
+   
 }
 
 if(!isset($_SESSION['tete'])) {
