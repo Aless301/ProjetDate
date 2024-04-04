@@ -6,21 +6,21 @@ include('includes/header.php');
     <p>Bienvenue dans le ProjetDate</br>Veuillez indiquer votre pseudo ci-dessous</p>
 </div>
 <div class="divLogin">
-<form class="bouton" method="post" action="login.php" >
-    <input type="text" name="pseado" placeholder="exemple : poireau">
-    <input type="submit" name="valider" value="Valider ! ">
-</form>
-<?php
-if (isset($_POST['pseado'])){
-    $_SESSION['pseudo']="";
-}
-if (isset($_POST['pseado'])){
-    $_SESSION['pseudo']=$_POST['pseado'];
-}
-if (isset($_POST['pseado'])){
-echo '<p>Es tu sûr de vouloir "'.$_SESSION['pseudo'].'" Comme Pseudo ? </br> Si oui la suite est ici : <a href="personnage/custompersonnage.php">Le jeu !</a></p>';
-}
-?>
+    <form class="bouton" method="post" action="login.php">
+        <input type="text" name="pseado" placeholder="exemple : poireau" required>
+        <input type="submit" name="valider" value="Valider ! ">
+    </form>
+    <?php
+    if (isset($_POST['pseado'])) {
+        $_SESSION['pseudo'] = "";
+    }
+    if (isset($_POST['pseado'])) {
+        $_SESSION['pseudo'] = $_POST['pseado'];
+    }
+    if (isset($_POST['pseado'])) {
+        echo '<p>Es tu sûr de vouloir "' . $_SESSION['pseudo'] . '" Comme Pseudo ? </br> Si oui la suite est ici : <a href="personnage/custompersonnage.php">Le jeu !</a></p>';
+    }
+    ?>
 </div>
 
 
