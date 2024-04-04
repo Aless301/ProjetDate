@@ -20,9 +20,8 @@ if(isset($_SESSION['tete'])){
     function afficherTete(image) {
         document.getElementById("tete_affichee").src = image;
     }
-    function afficherCorps(image) {
-        document.getElementById("corps_affichee").src = image;
-    }
+    afficherTete('../images/tete1.jpg');
+
 </script>
 
 <h2>Créez votre personnage :</h2>
@@ -39,21 +38,9 @@ if(isset($_SESSION['tete'])){
         <label for="tete3"><img src="../images/tete3.jpg" alt="Tête 3"></label>
     </div>
 
-    <div>
-        <h3>Choisissez un corps :</h3>
-        <input type="radio" id="corps1" name="corps" value="corps1" onclick="afficherCorps('../images/corps1.jpg')" checked>
-        <label for="corps1"><img src="../images/corps1.jpg" alt="Corps 1"></label>
-
-        <input type="radio" id="corps2" name="corps" value="corps2" onclick="afficherCorps('../images/corps2.jpg')">
-        <label for="corps2"><img src="../images/corps2.jpg" alt="Corps 2"></label>
-
-        <input type="radio" id="corps3" name="corps" value="corps3" onclick="afficherCorps('../images/corps3.jpg')">
-        <label for="corps3"><img src="../images/corps3.jpg" alt="Corps 3"></label>
-    </div>
-
+    
     <h3>Aperçu :</h3>
     <img id="tete_affichee" src="../images/<?php echo $tete; ?>.jpg" alt="Aperçu de la tête" style="width:100px;"><br>
-    <img id="corps_affichee" src="../images/corps1.jpg" alt="Aperçu du corps" style="width:100px;"><br>
     
     <input type="submit" name="submit" value="Valider la création">
 </form>
