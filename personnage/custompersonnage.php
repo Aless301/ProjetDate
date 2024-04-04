@@ -26,7 +26,7 @@ if(isset($_SESSION['tete'])){
 </script>
 
 <h2>Créez votre personnage :</h2>
-<form method="post" action="resultat_personnage.php">
+<form method="post" action="qcarteid.php">
     <div>
         <h3>Choisissez une tête :</h3>
         <input type="radio" id="tete1" name="tete" value="tete1" onclick="afficherTete('../images/tete1.jpg')" <?php if ($tete == 'tete1') echo 'checked'; ?>>
