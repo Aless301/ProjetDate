@@ -1,25 +1,12 @@
 <?php
 include('../includes/header.php');
-
-// Vérifier si une valeur de tête a été soumise via le formulaire POST
-if(isset($_POST['tete'])){
-    $_SESSION['tete'] = $_POST['tete']; // Stocker la valeur de tête dans la session
-}
-
-// Initialiser la valeur de tête
-$tete = isset($_SESSION['tete']) ? $_SESSION['tete'] : null;
-
-// Vérifier si une valeur de tête est définie dans la session
-if(isset($_SESSION['tete'])){
-    $tete = $_SESSION['tete'];
-}
-
 ?>
 
 <script>
     function afficherTete(image) {
         document.getElementById("tete_affichee").src = image;
     }
+    
     afficherTete('../images/tete1.jpg');
 
 </script>
