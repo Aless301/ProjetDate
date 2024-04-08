@@ -1,12 +1,27 @@
+<script>
+    var selectedBody = "<?php echo isset($_SESSION['corps_affichee']) ? $_SESSION['corps_affichee'] : ''; ?>";
+
+    function nextQuestion() {
+        var currentQuestion = document.getElementById('currentQuestion').value;
+        document.getElementById('question' + currentQuestion).style.display = 'none';
+
+        currentQuestion++;
+
+        
+        document.getElementById('question' + currentQuestion).style.display = 'block';
+        document.getElementById('currentQuestion').value = currentQuestion;
+    }
+</script>
+
 <?php
 include('../includes/header.php');
 
-if(isset($_SESSION['tete'])){
-    $tete = $_SESSION['tete'];
+if(isset($_POST['corps'])){
+    $corps = $_POST['corps'];
 
     echo "<h2>Informations spécifiques pour la tête sélectionnée :</h2>";
 
-    if($tete=='tete1'){
+    if($corps =='corps1'){
             echo "<h3>Informations pour la tête 1 :</h3>";
             echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
@@ -46,7 +61,7 @@ if(isset($_SESSION['tete'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }
-    elseif($tete=='tete2'){
+    elseif($corps=='corps2'){
             echo "<h3>Informations pour la tête 2 :</h3>";
             echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
@@ -101,7 +116,7 @@ if(isset($_SESSION['tete'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }
-    elseif($tete=='tete3'){
+    elseif($corps=='corps3'){
             echo "<h3>Informations pour la tête 3 :</h3>";
             echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
@@ -150,38 +165,3 @@ echo "</form>"; // Fermez le formulaire
 include('../includes/footer.php');
 ?>
 
-<script>
-    var selectedHead = "<?php echo isset($_SESSION['tete']) ? $_SESSION['tete'] : ''; ?>";
-
-    function nextQuestion() {
-        var currentQuestion = document.getElementById('currentQuestion').value;
-        document.getElementById('question' + currentQuestion).style.display = 'none';
-
-        currentQuestion++;
-
-        // Adapter le comportement en fonction de la tête sélectionnée
-        switch (selectedHead) {
-            case 'tete1':
-                if (currentQuestion > 7) { // Nombre total de questions pour la tête 1
-                    currentQuestion = 7;
-                }
-                break;
-            case 'tete2':
-                if (currentQuestion > 10) { // Nombre total de questions pour la tête 2
-                    currentQuestion = 10;
-                }
-                break;
-            case 'tete3':
-                if (currentQuestion > 7) { // Nombre total de questions pour la tête 3
-                    currentQuestion = 7;
-                }
-                break;
-            default:
-                // Gérer le cas par défaut ici
-                break;
-        }
-
-        document.getElementById('question' + currentQuestion).style.display = 'block';
-        document.getElementById('currentQuestion').value = currentQuestion;
-    }
-</script>
