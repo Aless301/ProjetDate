@@ -8,8 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet Date</title>
-    <link rel="stylesheet" href="../style.css">
-    <link class="logo" rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link class="logo" rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
 
 <body>
@@ -22,7 +22,7 @@ session_start();
                 echo '<button style="float: left; margin: 5px 5px 5px 5px;" onclick="toggleDiv()"><img src="images/info.jpg" alt="image d\'info pour afficher ou non la partie de gauche"></button> </br>';
             }
             ?>
-            <li><a href="../index.php">Index</a></li>
+            <li><a href="index.php">Index</a></li>
             <li> <a href="session_crash.php">.</a></li>
         </ul>
     </nav>

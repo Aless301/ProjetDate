@@ -93,9 +93,9 @@ N  :Parler de voiture
 
 
 //Lydia: Q12: "Tu veux regarder qui?"
-V  : Talmo je suis un grand fan neuuueil 
-N  : Ptit squeezie il live aujourd'hui 
-F  : Sardoche j'adore league of legends et ne pas me laver
+V  : Talmo, je suis un grand fan neuuueil 
+N  : Squeezie, il live aujourd'hui 
+F  : Sardoche, j'adore league of legends et ne pas me laver
 
 
 
