@@ -1,17 +1,21 @@
-<div class="divLogin">
-    <?php
-    include('includes/header.php');
-    ?>
-    <?php
-    $_SESSION['score'] = 0;
-    ?>
+<?php
+include('includes/header1.php');
+$_SESSION['score'] = 0;
+?>
+<meta http-equiv="refresh" content="3;login.php" />
+<?php include('includes/header2.php'); ?>
 
-    <head>
-        <meta http-equiv="refresh" content="5;login.php" />
-    </head>
+
+<div class="divLogin">
+
     <h1>Projet Date</h1>
     <div class="loader"></div>
-    <?php
-    include('includes/footer.php');
-    ?>
 </div>
+
+<?php
+// pour l'instant, il n'y a rien dans le footer
+// include('includes/footer.php');
+?>
+</body>
+
+</html>

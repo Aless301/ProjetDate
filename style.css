@@ -27,7 +27,8 @@ nav {
   background-color: #c8ccbb;
   position: fixed;
   top: 0;
-  z-index: 1000; /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
+  z-index: 1000;
+  /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
 }
 
 nav a {
@@ -75,6 +76,7 @@ h1 {
   text-shadow: #28046a 2px 2px 0px;
   padding: 5px;
 }
+
 h2 {
   color: #c8ccbb;
   text-decoration: none;
@@ -97,7 +99,7 @@ hr {
   display: none;
 }
 
-.bouton{
+.bouton {
   margin: 10px;
 }
 
@@ -155,7 +157,7 @@ video {
 
 }
 
-.txtwelcome{
+.txtwelcome {
   text-align: center;
   margin-top: 15%;
   font-size: 175%;
@@ -167,13 +169,13 @@ input[type="text"] {
   border: 1px black solid;
   min-width: 20%;
   height: 12.5%;
-  font-size: 175%; 
+  font-size: 175%;
 }
 
 input[type="submit"] {
   border: 1px black solid;
-  min-width: 10%; 
-  font-size: 125%; 
+  min-width: 10%;
+  font-size: 125%;
 }
 
 
@@ -186,6 +188,7 @@ input[type="submit"] {
   background-color: gray;
   position: relative;
 }
+
 .bubbleD {
   max-width: 300px;
   padding: 10px;
@@ -195,6 +198,7 @@ input[type="submit"] {
   position: relative;
 
 }
+
 .bubbleQ {
   max-width: 300px;
   padding: 10px;
@@ -218,6 +222,7 @@ input[type="submit"] {
   left: -15px;
   transform: translateY(-50%);
 }
+
 .right-arrow {
   border-width: 10px 0 10px 15px;
   border-color: transparent transparent transparent #e6e6e6;
@@ -228,8 +233,10 @@ input[type="submit"] {
 
 /*Écran de Chargement*/
 .loader {
-  border: 16px solid #f3f3f3; /* Gris clair */
-  border-top: 16px solid #3498db; /* Bleu */
+  border: 16px solid #f3f3f3;
+  /* Gris clair */
+  border-top: 16px solid #3498db;
+  /* Bleu */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -241,6 +248,7 @@ input[type="submit"] {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -261,4 +269,10 @@ input[type="submit"] {
   height: 30px;
   background-color: #4CAF50;
   color: white;
+}
+
+/* ajout Piron */
+label>img,
+#corps_affichee {
+  width: 25%;
 }

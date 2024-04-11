@@ -1,6 +1,6 @@
 <?php
-include('includes/header.php');
-?>
+include('includes/header1.php');
+include('includes/header2.php'); ?>
 
 <div class="txtwelcome">
     <p>Bienvenue dans le ProjetDate</br>Veuillez indiquer votre pseudo ci-dessous</p>
@@ -18,7 +18,7 @@ include('includes/header.php');
         $_SESSION['pseudo'] = $_POST['pseado'];
     }
     if (isset($_POST['pseado'])) {
-        echo '<p>Es tu sûr de vouloir "' . $_SESSION['pseudo'] . '" Comme Pseudo ? </br> Si oui la suite est ici : <a href="personnage/custompersonnage.php">Le jeu !</a></p>';
+        echo '<p>Es tu sûr de vouloir "' . $_SESSION['pseudo'] . '" Comme Pseudo ? </br> Si oui la suite est ici : <a href="' . $root . 'personnage/custompersonnage.php">Le jeu !</a></p>';
     }
     ?>
 </div>
