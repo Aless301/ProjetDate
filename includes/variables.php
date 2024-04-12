@@ -1,2 +1,2 @@
 <?php
-$root = "/github/ProjetDate/";
+$root = "/";
