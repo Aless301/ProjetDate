@@ -1,6 +1,6 @@
 <?php
-include('includes/header1.php');
-include('includes/header2.php');
+include('../includes/header1.php');
+include('../Includes/header2.php');
 
 if(isset($_POST['corps'])){
     $corps = $_POST['corps'];
@@ -15,13 +15,13 @@ if(isset($_POST['corps'])){
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
             echo "<div id='question1'>";
-            echo "<label for='nom'>Nom :</label><br>";
+            echo "<label for='nom'><p>Nom :</p></label><br>";
             echo "<input type='text' id='nom' name='nom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
 
             echo "<div id='question2' style='display:none;'>";
-            echo "<label for='prenom'>Prénom :</label><br>";
+            echo "<label for='prenom'><p>Prénom :</p></label><br>";
             echo "<input type='text' id='prenom' name='prenom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
