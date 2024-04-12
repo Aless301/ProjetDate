@@ -1,5 +1,6 @@
 <?php
-include('../includes/header.php');
+include('includes/header1.php');
+include('includes/header2.php');
 
 if(isset($_POST['corps'])){
     $corps = $_POST['corps'];

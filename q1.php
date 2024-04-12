@@ -1,12 +1,6 @@
 <?php
-include('includes/header.php');
-?>
-<script>
-    src = "script.js"
-</script>
-<?php
-$_SESSION['score'] = 0;
-?>
+include('includes/header1.php');
+include('includes/header2.php'); ?>
 
 <script>
     function toggleDiv() {
