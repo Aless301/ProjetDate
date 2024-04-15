@@ -745,9 +745,6 @@ if (isset($_SESSION['r39'])) {
 if (isset($_SESSION['r40'])) {
     echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Go regarder un live twitch sur une AppleWatch. </p> </div>';
 }
-?>
-
-<?php
 
 if (isset($_SESSION['r38'])) {
     echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Aller go regarder la lune au telescope. </p> </div>';
@@ -760,6 +757,77 @@ if (isset($_SESSION['r38'])) {
     $_SESSION['score'] = $_SESSION['score'] + 8;
 }
 ?>
+
+<?php
+if (isset($_POST['r38'])) {
+    echo '
+
+
+<div class="bubbleQ">
+    <p>Tu viens d\'arriver devant sa porte.</p>
+</div>
+
+<div class="bubbleQ">
+    <form action="q1.php" method="post">
+        <legend>
+            <p>Que veut tu lui dire pour commencer la conversation ? </br></br></p>
+        </legend>
+
+        <label for="reponse1">
+            <p>"Holà misstinguette, comment tu vas ?" ?</p>
+        </label>
+        <input type="radio" id="r1" name="r1" value="1">
+
+        <label for="reponse2">
+            <p>"Salut ça va ?" ?</p>
+        </label>
+        <input type="radio" id="r2" name="r2" value="2">
+
+        <label for="reponse3">
+            <p>"Ah ouais t\'es moins belle que sur ta photo." ?</p>
+        </label>
+        <input type="radio" id="r3" name="r3" value="3">
+
+        <label for="rien"></br></label>
+        <input type="hidden" id="q1" name="q1" value="q1">
+        <input class="bouton" type="submit" value="↪">
+    </form>
+</div>';
+}
+
+if (isset($_POST['r1'])) {
+    $_SESSION['r1'] = $_POST['r1'];
+} elseif (isset($_POST['r2'])) {
+    $_SESSION['r2'] = $_POST['r2'];
+} elseif (isset($_POST['r3'])) {
+    $_SESSION['r3'] = $_POST['r3'];
+}
+
+if (isset($_SESSION['r1'])) {
+    echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Holà misstinguette, comment tu vas ? </p> </div>';
+}
+if (isset($_SESSION['r2'])) {
+    echo '<div class="bubbleD">  <div class="arrow right-arrow"></div> <p> Salut ça va ? </p> </div>';
+}
+if (isset($_SESSION['r3'])) {
+    echo '<div class="bubbleD"> <div class="arrow right-arrow"></div> <p> Ah ouais t\'es moins belle que sur ta photo. </p> </div>';
+}
+
+if (isset($_SESSION['r1'])) {
+    echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Salut monsieur, aussi beau que sur ta photo. </p> </div>';
+    $_SESSION['score'] = $_SESSION['score'] + 5;
+}
+
+if (isset($_SESSION['r2'])) {
+    echo '<div class="bubbleG"> <div class="arrow left-arrow"></div> <p> Salut.</p> </div>';
+}
+if (isset($_SESSION['r3'])) {
+    $_SESSION['score'] = $_SESSION['score'] - 9999999999999;
+    header("Location: findepage.php");
+    exit;
+}
+?>
+
 
 <p style="clear: both;">Votre date est fini Voulez vous voir vos résultat ?</p>
 <form style="clear: both;" action="findepage.php">
