@@ -759,32 +759,27 @@ if (isset($_SESSION['r38'])) {
 ?>
 
 <?php
-if (isset($_POST['r38'])) {
+if (isset($_SESSION['r38'])) {
     echo '
-
-
-<div class="bubbleQ">
-    <p>Tu viens d\'arriver devant sa porte.</p>
-</div>
 
 <div class="bubbleQ">
     <form action="q1.php" method="post">
         <legend>
-            <p>Que veut tu lui dire pour commencer la conversation ? </br></br></p>
+            <p>Tu veux regarder qui ? </br></br></p>
         </legend>
 
         <label for="reponse1">
-            <p>"Holà misstinguette, comment tu vas ?" ?</p>
+            <p>" Talmo, je suis un grand fan neuuueil." ?</p>
         </label>
         <input type="radio" id="r1" name="r1" value="1">
 
         <label for="reponse2">
-            <p>"Salut ça va ?" ?</p>
+            <p>"Squeezie, il live aujourd\'hui." ?</p>
         </label>
         <input type="radio" id="r2" name="r2" value="2">
 
         <label for="reponse3">
-            <p>"Ah ouais t\'es moins belle que sur ta photo." ?</p>
+            <p>"Sardoche, j\'adore league of legends et ne pas me laver." ?</p>
         </label>
         <input type="radio" id="r3" name="r3" value="3">
 

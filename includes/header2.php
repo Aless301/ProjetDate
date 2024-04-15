@@ -22,7 +22,7 @@
             // Vérifier si la page actuelle est q1.php
             if (basename($_SERVER['PHP_SELF']) == 'q1.php') {
                 // Afficher le bouton
-                echo '<button style="float: left; margin: 5px 5px 5px 5px;" onclick="toggleDiv()"><img src="images/info.jpg" alt="image d\'info pour afficher ou non la partie de gauche"></button> </br>';
+                echo '<button class="btn"><span class="icon"><svg viewBox="0 0 175 80" width="40" height="40"><rect width="80" height="15" fill="#f0f0f0" rx="10"></rect><rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect><rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect></svg></span><span class="text" onclick="toggleDiv()">INFO</span></button> </br>';
             }
             ?>
             <li><a href="<?= $root ?>index.php">Index</a></li>
