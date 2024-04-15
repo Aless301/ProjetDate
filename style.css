@@ -276,3 +276,63 @@ label>img,
 #corps_affichee {
   width: 25%;
 }
+
+.infonom {
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+
+.infoprenom{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infosexe{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infonation{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infodnaissance{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infolnaissance{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infoprenom{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infocreation{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.infoexpiration{
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
