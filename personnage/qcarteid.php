@@ -103,7 +103,7 @@ if(isset($_POST['corps'])){
             echo "<label for='date_expiration'>Date d'expiration :</label><br>";
             $date_expiration = date('Y-m-d', strtotime('+6 years'));
             echo "<input type='date' id='date_expiration' name='date_expiration' value='$date_expiration' readonly><br>";
-            echo "<input type='button' name='submit' value='Valider'>";
+            echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
 
             echo "<div id='question5' style='display:none;'>";
