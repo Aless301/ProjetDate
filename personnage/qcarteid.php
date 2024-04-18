@@ -11,7 +11,7 @@ if(isset($_POST['corps'])){
 <?php
     if ($corps =='corps1'){
             echo "<h3>Informations pour le corps 1 :</h3>";
-            echo "<form method='post' action='affichagecarteid1.php' id='formQuestions'>";
+            echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
             echo "<div id='question1'>";
@@ -32,10 +32,6 @@ if(isset($_POST['corps'])){
             echo "<option value=''>Choisissez votre sexe</option>";
             echo "<option value='male'>Masculin</option>";
             echo "<option value='feminin'>Féminin</option>";
-            echo "<option value='non_binaire'>Non-binaire</option>";
-            echo "<option value='gender_queer'>gender queer</option>";
-            echo "<option value='gender_fluid'>gender fluid</option>";
-            echo "<option value='transgenre'>transgenre</option>";
             echo "</select><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
@@ -59,10 +55,9 @@ if(isset($_POST['corps'])){
             echo "</div>";
 
             echo "<div id='question7' style='display:none;'>";
-            echo "<label for='date_creation'>Date de création :</label><br>";
-            // Affichage de la date de création (moment actuel)
-            $date_creation = date('Y-m-d');
-            echo "<input type='date' id='date_creation' name='date_creation' value='$date_creation' readonly><br>";
+            echo "<label for='numero_serie'>Numéro de série :</label><br>";
+            $numero_serie = rand(100000, 999999); // Génère un nombre aléatoire entre 100000 et 999999
+            echo "<input type='text' id='numero_serie' name='numero_serie' value='$numero_serie' readonly><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
 
@@ -76,7 +71,7 @@ if(isset($_POST['corps'])){
 }
     elseif($corps=='corps2'){
             echo "<h3>Informations pour le corps 2 :</h3>";
-            echo "<form method='post' action='affichagecarteid.php' id='formQuestions'>";
+            echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
             
             echo "<div id='question1'>";
@@ -137,10 +132,6 @@ if(isset($_POST['corps'])){
             echo "<option value=''>Choisissez votre sexe</option>";
             echo "<option value='male'>Masculin</option>";
             echo "<option value='feminin'>Féminin</option>";
-            echo "<option value='non_binaire'>Non-binaire</option>";
-            echo "<option value='gender_queer'>gender queer</option>";
-            echo "<option value='gender_fluid'>gender fluid</option>";
-            echo "<option value='transgenre'>transgenre</option>";
             echo "</select><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
@@ -159,7 +150,7 @@ if(isset($_POST['corps'])){
     }
     elseif($corps=='corps3'){
             echo "<h3>Informations pour le corps 3 :</h3>";
-            echo "<form method='post' action='affichagecarteid3.php' id='formQuestions'>";
+            echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
             echo "<div id='question1'>";
@@ -204,10 +195,6 @@ if(isset($_POST['corps'])){
             echo "<option value=''>Choisissez votre sexe</option>";
             echo "<option value='male'>Masculin</option>";
             echo "<option value='feminin'>Féminin</option>";
-            echo "<option value='non_binaire'>Non-binaire</option>";
-            echo "<option value='gender_queer'>gender queer</option>";
-            echo "<option value='gender_fluid'>gender fluid</option>";
-            echo "<option value='transgenre'>transgenre</option>";
             echo "</select><br>";
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
