@@ -9,8 +9,8 @@ if(isset($_POST['corps'])){
 <div class='divLogin'>
 
 <?php
-    if ($corps =='corps1'){
-            echo "<h3>Informations pour le corps 1 :</h3>";
+    if ($corps =='corps1' || $corps =='corps4' || $corps =='corps5' ||$corps =='corps6' || $corps =='corps9'){
+            echo "<h3>Informations pour ce choix :</h3>";
             echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
@@ -69,8 +69,8 @@ if(isset($_POST['corps'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
 }
-    elseif($corps=='corps2'){
-            echo "<h3>Informations pour le corps 2 :</h3>";
+    elseif($corps=='corps3' || $corps =='corps7'){
+            echo "<h3>Informations pour ce choix :</h3>";
             echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
             
@@ -148,8 +148,8 @@ if(isset($_POST['corps'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }
-    elseif($corps=='corps3'){
-            echo "<h3>Informations pour le corps 3 :</h3>";
+    elseif($corps=='corps2' || $corps =='corps8'){
+            echo "<h3>Informations pour ce choix :</h3>";
             echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
