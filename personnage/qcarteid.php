@@ -1,6 +1,5 @@
 <?php
-include('../includes/header1.php');
-include('../Includes/header2.php');
+include('../includes/header.php');
 
 if(isset($_POST['corps'])){
     $corps = $_POST['corps'];
@@ -11,17 +10,17 @@ if(isset($_POST['corps'])){
 <?php
     if ($corps =='corps1'){
             echo "<h3>Informations pour le corps 1 :</h3>";
-            echo "<form method='post' action='../q1.php' id='formQuestions'>";
+            echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
 
             echo "<div id='question1'>";
-            echo "<label for='nom'><p>Nom :</p></label><br>";
+            echo "<label for='nom'>Nom :</label><br>";
             echo "<input type='text' id='nom' name='nom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
 
             echo "<div id='question2' style='display:none;'>";
-            echo "<label for='prenom'><p>Prénom :</p></label><br>";
+            echo "<label for='prenom'>Prénom :</label><br>";
             echo "<input type='text' id='prenom' name='prenom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
@@ -32,6 +31,16 @@ if(isset($_POST['corps'])){
             echo "<option value=''>Choisissez votre sexe</option>";
             echo "<option value='male'>Masculin</option>";
             echo "<option value='feminin'>Féminin</option>";
+            echo "<option value='non_binaire'>Non-binaire</option>";
+            echo "<option value='gender_queer'>gender queer</option>";
+            echo "<option value='gender_fluid'>gender fluid</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
+            echo "<option value='transgenre'>transgenre</option>";
             echo "</select><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
@@ -55,9 +64,10 @@ if(isset($_POST['corps'])){
             echo "</div>";
 
             echo "<div id='question7' style='display:none;'>";
-            echo "<label for='numero_serie'>Numéro de série :</label><br>";
-            $numero_serie = rand(100000, 999999); // Génère un nombre aléatoire entre 100000 et 999999
-            echo "<input type='text' id='numero_serie' name='numero_serie' value='$numero_serie' readonly><br>";
+            echo "<label for='date_creation'>Date de création :</label><br>";
+            // Affichage de la date de création (moment actuel)
+            $date_creation = date('Y-m-d');
+            echo "<input type='date' id='date_creation' name='date_creation' value='$date_creation' readonly><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
 
@@ -71,15 +81,14 @@ if(isset($_POST['corps'])){
 }
     elseif($corps=='corps2'){
             echo "<h3>Informations pour le corps 2 :</h3>";
-            echo "<form method='post' action='../q1.php' id='formQuestions'>";
+            echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
             
-            echo "<div id='question1'>";
-            echo "<label for='Prenom'>Prenom :</label><br>";
+            echo "<div id='question1' style='display:none;'>";
+            echo "<label for='prenom'>Prénom :</label><br>";
             echo "<input type='text' id='prenom' name='prenom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
 
             echo "<div id='question2' style='display:none;'>";
             echo "<label for='nom'>Nom :</label><br>";
@@ -98,7 +107,7 @@ if(isset($_POST['corps'])){
             echo "<label for='date_expiration'>Date d'expiration :</label><br>";
             $date_expiration = date('Y-m-d', strtotime('+6 years'));
             echo "<input type='date' id='date_expiration' name='date_expiration' value='$date_expiration' readonly><br>";
-            echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
+            echo "<input type='button' name='submit' value='Valider'>";
             echo "</div>";
 
             echo "<div id='question5' style='display:none;'>";
@@ -128,74 +137,52 @@ if(isset($_POST['corps'])){
 
             echo "<div id='question9' style='display:none;'>";
             echo "<label for='sexe'>Sexe :</label><br>";
-            echo "<select id='sexe' name='sexe'>";
-            echo "<option value=''>Choisissez votre sexe</option>";
-            echo "<option value='male'>Masculin</option>";
-            echo "<option value='feminin'>Féminin</option>";
-            echo "</select><br>";
+            echo "<input type='text' id='sexe' name='sexe'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
             echo "<div id='question10' style='display:none;'>";
             echo "<label for='groupe_sanguin'>Groupe sanguin :</label><br>";
-            echo "<select id='groupe_sauguin' name='groupesanguin'>";
-            echo "<option value=''>Choisissez votre groupe sanguin</option>";
-            echo "<option value='a'>A</option>";
-            echo "<option value='b'>B</option>";
-            echo "<option value='ab'>AB</option>";
-            echo "<option value='o'>O</option>";
-            echo "</select><br>";
+            echo "<input type='text' id='groupe_sanguin' name='groupe_sanguin'><br>";
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }
     elseif($corps=='corps3'){
             echo "<h3>Informations pour le corps 3 :</h3>";
-            echo "<form method='post' action='../q1.php' id='formQuestions'>";
+            echo "<form method='post' action='carteid.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
-
             echo "<div id='question1'>";
             echo "<label for='nom'>Nom :</label><br>";
             echo "<input type='text' id='nom' name='nom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
             echo "<div id='question2' style='display:none;'>";
             echo "<label for='prenom'>Prénom :</label><br>";
             echo "<input type='text' id='prenom' name='prenom'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
             echo "<div id='question3' style='display:none;'>";
             echo "<label for='date_naissance'>Date de naissance :</label><br>";
             echo "<input type='date' id='date_naissance' name='date_naissance'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
             echo "<div id='question4' style='display:none;'>";
             echo "<label for='lieu_naissance'>Lieu de naissance :</label><br>";
             echo "<input type='text' id='lieu_naissance' name='lieu_naissance'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
             echo "<div id='question5' style='display:none;'>";
+            echo "<label for='sexe'>Sexe :</label><br>";
+            echo "<input type='text' id='sexe' name='sexe'><br>";
+            echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
+            echo "</div>";
+            echo "<div id='question6' style='display:none;'>";
             echo "<label for='nom_pere'>Nom du père :</label><br>";
             echo "<input type='text' id='nom_pere' name='nom_pere'><br>";
             echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
             echo "</div>";
-
-            echo "<div id='question6' style='display:none;'>";
+            echo "<div id='question7' style='display:none;'>";
             echo "<label for='nom_mere'>Nom de la mère :</label><br>";
             echo "<input type='text' id='nom_mere' name='nom_mere'><br>";
-            echo "<input type='button' onclick='nextQuestion()' value='Suivant'>";
-            echo "</div>";
-            
-            echo "<div id='question7' style='display:none;'>";
-            echo "<label for='sexe'>Sexe :</label><br>";
-            echo "<select id='sexe' name='sexe'>";
-            echo "<option value=''>Choisissez votre sexe</option>";
-            echo "<option value='male'>Masculin</option>";
-            echo "<option value='feminin'>Féminin</option>";
-            echo "</select><br>";
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }

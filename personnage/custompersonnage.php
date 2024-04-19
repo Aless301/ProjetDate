@@ -25,24 +25,6 @@ include('../includes/header2.php');
 
         <input type="radio" id="corps3" name="corps" value="corps3" onclick="afficherCorps('<?= $root ?>images/corps3.jpg')">
         <label for="corps3"><img src="<?= $root ?>images/corps3.jpg" alt="Corps 3"></label>
-
-        <input type="radio" id="corps4" name="corps" value="corps4" onclick="afficherCorps('<?= $root ?>images/corps4.jpg')">
-        <label for="corps4"><img src="<?= $root ?>images/corps4.jpg" alt="Corps 4"></label>
-
-        <input type="radio" id="corps5" name="corps" value="corps5" onclick="afficherCorps('<?= $root ?>images/corps5.jpg')">
-        <label for="corps5"><img src="<?= $root ?>images/corps5.jpg" alt="Corps 5"></label>
-
-        <input type="radio" id="corps6" name="corps" value="corps6" onclick="afficherCorps('<?= $root ?>images/corps6.jpg')">
-        <label for="corps6"><img src="<?= $root ?>images/corps6.jpg" alt="Corps 6"></label>
-
-        <input type="radio" id="corps7" name="corps" value="corps7" onclick="afficherCorps('<?= $root ?>images/corps7.jpg')">
-        <label for="corps7"><img src="<?= $root ?>images/corps7.jpg" alt="Corps 7"></label>
-
-        <input type="radio" id="corps8" name="corps" value="corps8" onclick="afficherCorps('<?= $root ?>images/corps8.jpg')">
-        <label for="corps8"><img src="<?= $root ?>images/corps8.jpg" alt="Corps 8"></label>
-
-        <input type="radio" id="corps9" name="corps" value="corps9" onclick="afficherCorps('<?= $root ?>images/corps9.jpg')">
-        <label for="corps9"><img src="<?= $root ?>images/corps9.jpg" alt="Corps 9"></label>
     </div>
 
     <h3>Aperçu :</h3>
