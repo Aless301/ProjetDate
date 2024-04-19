@@ -13,8 +13,7 @@ $_SESSION['score'] = 0;
 </div>
 
 <?php
-// pour l'instant, il n'y a rien dans le footer
-// include('includes/footer.php');
+include('includes/footer.php');
 ?>
 </body>
 
