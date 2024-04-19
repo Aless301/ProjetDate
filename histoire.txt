@@ -122,12 +122,12 @@ si t'as plus de 100 :Tu veux rester dormir ?
 si t'as entre 0 et 100 non compris  : C'etait cool mais on peut en rester la 
 si t'es en negatif  : C'etait chiant et t'etais peu interessant. La porte est là-bas.
 
+// Il est 3h00 du matin
 
-
-//Lydia: Q16: ""
-V  :
-N  :
-F  :
+//Lydia: Q16: "Youpiiii, qu'est-ce que tu veux faire maintenant 😉 ?"
+N  : "On pourrait jouer au scrabble et plus 😉 ?"
+F  : "Je vais prendre une douche, commandé ubereat et dormir."
+V  : "ACTION: S'assoir sur le canapé et s'échanger des cartes pokemons."
 
 
 //Lydia: Q17: ""
