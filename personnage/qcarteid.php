@@ -69,7 +69,7 @@ if(isset($_POST['corps'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
 }
-    elseif($corps=='corps2' || $corps =='corps8'){
+    elseif($corps=='corps3' || $corps =='corps7'){
             echo "<h3>Informations pour ce choix :</h3>";
             echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
@@ -148,7 +148,7 @@ if(isset($_POST['corps'])){
             echo "<input type='submit' name='submit' value='Valider'>";
             echo "</div>";
     }
-    elseif($corps=='corps3' || $corps =='corps7'){
+    elseif($corps=='corps2' || $corps =='corps8'){
             echo "<h3>Informations pour ce choix :</h3>";
             echo "<form method='post' action='../q1.php' id='formQuestions'>";
             echo "<input type='hidden' id='currentQuestion' name='currentQuestion' value='1'>"; // Pour suivre la question actuelle
