@@ -1,5 +1,6 @@
 <?php
-include('includes/header.php');
+include('includes/header1.php');
+include('includes/header2.php');
 ?>
 <div class="divLogin">
   <?php
@@ -46,7 +47,6 @@ include('includes/header.php');
       echo "<p>$name : $score</p>";
     }
   }
-  echo "</ol>";
   ?>
 </div>
 <?php
