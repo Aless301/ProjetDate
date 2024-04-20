@@ -2,7 +2,7 @@
 include('includes/header1.php');
 $_SESSION['score'] = 0;
 ?>
-<meta http-equiv="refresh" content="3;login.php" />
+<meta http-equiv="refresh" content="2;login.php"/>
 <?php include('includes/header2.php'); ?>
 
 
