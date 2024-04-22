@@ -48,6 +48,15 @@ include('includes/header2.php');
     }
   }
   ?>
+  <p>______________________________________________________________________________________________________</p>
+  <?php
+  for ($i = 6; $i <500; $i++) {
+    if (isset($scores[$i])) {
+      list($name, $score) = explode(";", $scores[$i]);
+      echo "<p>$name : $score</p>";
+    }
+  }
+  ?>
 </div>
 <?php
 include('includes/footer.php');
