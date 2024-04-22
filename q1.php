@@ -2,17 +2,6 @@
 include('includes/header1.php');
 include('includes/header2.php'); 
 ?>
-
-<script>
-    function toggleDiv() {
-        var div = document.getElementById("myDiv");
-        if (div.style.display === "none") {
-            div.style.display = "block"; // Pour l'afficher
-        } else {
-            div.style.display = "none"; // Pour le masquer
-        }
-    }
-</script>
 <?php
 if(!isset($_POST['q1'])){
     echo '
