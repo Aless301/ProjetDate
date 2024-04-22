@@ -11,3 +11,4 @@ include('variables.php');
     <title>Projet Date</title>
     <link rel="stylesheet" href="<?= $root ?>style.css">
     <link class="logo" rel="icon" type="image/x-icon" href="<?= $root ?>images/logo.png">
+    <script src="<?= $root ?>includes/script.js"></script>

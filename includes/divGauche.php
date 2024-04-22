@@ -14,7 +14,7 @@ echo '<p>Votre Score : ' . $_SESSION['score'] . '</p>';
     const progressLabel = document.getElementById('progressLabel');
 
     function updateProgressBar() {
-        currentScore += 5; 
+        currentScore += 5;
         const progressPercentage = (currentScore / targetScore) * <?php echo $_SESSION['score'] ?>;
         progressBar.style.width = `${progressPercentage}%`;
         progressLabel.innerText = `${progressPercentage.toFixed(0)}%`;
@@ -23,7 +23,6 @@ echo '<p>Votre Score : ' . $_SESSION['score'] . '</p>';
             requestAnimationFrame(updateProgressBar);
         }
     }
-
 
     updateProgressBar();
 </script>
