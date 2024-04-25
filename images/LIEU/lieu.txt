@@ -1,8 +1,0 @@
-1)PALIER DE LA PORTE
-2)SALON
-3) CUISINE (établis + table à manger)
-4) VILLE
-4.1) Boutique de mode
-5) COLLINE
-6) JARDIN
-7) MAISON
