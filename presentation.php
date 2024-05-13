@@ -148,6 +148,7 @@ include('includes/header2.php'); ?>
 </style>
 
 <h1>Le but du jeu :</h1>
+<<<<<<< Updated upstream
 <p>Le but est assez simple, le jeu "Projet Date" conciste à draguer une personne. </br> Vous devez repondre à des questions, certaines vous rapportent des points, d'autre vous en font perde. </br> Il y a aussi des questions Green Flag, qui vous font gagner plus de points. Et les questions Red Flag qui vous font perdre la partie directement.<br></p>
 
 <button onclick="window.location.href = 'q1.php';" type="button" class="button">
@@ -157,6 +158,18 @@ include('includes/header2.php'); ?>
     <div class="button-bottom"></div>
     <div class="button-base"></div>
 </button>
+=======
+<p>Le but est assez simple, le jeu "Projet Date" conciste à draguer une personne. </br> Vous devez repondre à des questions, certaines vous rapportent des points, d'autre vous en font perde. </br> Il y a aussi des questions Green Flag, qui vous font gagner plus de points. Et les questions Red Flag qui vous font perdre la partie directement.</p>
+
+<h1>Les différentes étapes :</h1>
+<p>Le jeu est composer de différentes étapes,</p>
+<p>
+Choisir votre Pseudo,</br>
+Customiser votre personnage,</br>
+Jouer votre partie,</br>
+Et regarder vos resultat.</br>
+</p>
+>>>>>>> Stashed changes
 
 <?php
 include('includes/footer.php')

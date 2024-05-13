@@ -52,7 +52,7 @@ html {
 
 body {
   font-family: Arial;
-  text-align: center;
+  text-align: justify;
   color: hsl(231, 82%, 6%);
   margin-top: 70px;
 }
@@ -69,7 +69,7 @@ footer {
 h1 {
   color: #c8ccbb;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
   clear: right;
   border-radius: 50px;
   margin: 5px;
@@ -80,7 +80,7 @@ h1 {
 h2 {
   color: #c8ccbb;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
   clear: right;
   border-radius: 50px;
   margin: 5px;
